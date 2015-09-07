@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fr" >
+    
+     <LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="85"></LinearLayout>
+
+    <LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="15"
+    android:weightSum="10"
+    >
+
+    <LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="8"
+    >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:shadowColor="#00ccff"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1"
+        android:text="Choose a color" 
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+      </LinearLayout>
+      
+     <LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="2"
+    android:weightSum="1"
+    android:gravity="center"
+    >
+      <LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight=".7"
+    android:weightSum=".1"
+  
+    >
+     <LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight=".033"></LinearLayout>
+          <Spinner
+              android:id="@+id/spinner1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+             android:layout_weight=".033"
+               />
+         <LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight=".033"></LinearLayout>
+       </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+       android:layout_marginLeft="40dp"
+       android:layout_marginRight="40dp" 
+        android:layout_weight=".3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+              android:layout_gravity="center_horizontal"
+             android:background="#ccffcc">
+             <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="TextView" 
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ff6600"/>
+            
+        </LinearLayout>
+    </ScrollView>
+   </LinearLayout>
+  </LinearLayout>
+   
+</LinearLayout>

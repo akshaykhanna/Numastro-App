@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fr" >
+    
+      <LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="85">
+          <com.startapp.android.publish.banner.Banner 
+android:id="@+id/startAppBanner"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"/>
+      </LinearLayout>
+
+    <LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="15"
+    android:weightSum="10"
+    android:gravity="center_vertical"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_margin="30dp"
+          >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ccffcc" >
+            <TextView
+        android:id="@+id/tvQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+       
+        android:textSize="20dp"
+        android:textColor="#ff6600"
+        />
+        </LinearLayout>
+    </ScrollView>
+   </LinearLayout>
+</LinearLayout>

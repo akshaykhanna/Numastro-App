@@ -1,0 +1,193 @@
+android.support.v4.app.BackStackState
+android.support.v4.app.BackStackState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.Fragment$SavedState
+android.support.v4.app.Fragment$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentManagerState
+android.support.v4.app.FragmentManagerState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentState
+android.support.v4.app.FragmentState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentTabHost: void setOnTabChangedListener(android.widget.TabHost$OnTabChangeListener)
+android.support.v4.app.FragmentTabHost$SavedState
+android.support.v4.app.FragmentTabHost$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status[] values()
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status valueOf(java.lang.String)
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColor(int)
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColorResource(int)
+android.support.v4.view.PagerTabStrip: int getTabIndicatorColor()
+android.support.v4.view.PagerTabStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.PagerTabStrip: void setBackgroundColor(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundResource(int)
+android.support.v4.view.PagerTabStrip: void setDrawFullUnderline(boolean)
+android.support.v4.view.PagerTabStrip: boolean getDrawFullUnderline()
+android.support.v4.view.PagerTabStrip: int getMinHeight()
+android.support.v4.view.PagerTitleStrip: void setSingleLineAllCaps(android.widget.TextView)
+android.support.v4.view.PagerTitleStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTitleStrip: int getTextSpacing()
+android.support.v4.view.PagerTitleStrip: void setNonPrimaryAlpha(float)
+android.support.v4.view.PagerTitleStrip: void setTextColor(int)
+android.support.v4.view.PagerTitleStrip: void setGravity(int)
+android.support.v4.view.PagerTitleStrip: int getMinHeight()
+android.support.v4.view.ViewPager: void setScrollState(int)
+android.support.v4.view.ViewPager: void setAdapter(android.support.v4.view.PagerAdapter)
+android.support.v4.view.ViewPager: android.support.v4.view.PagerAdapter getAdapter()
+android.support.v4.view.ViewPager: void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener)
+android.support.v4.view.ViewPager: void setCurrentItem(int)
+android.support.v4.view.ViewPager: int getCurrentItem()
+android.support.v4.view.ViewPager: void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+android.support.v4.view.ViewPager: void setChildrenDrawingOrderEnabledCompat(boolean)
+android.support.v4.view.ViewPager: int getOffscreenPageLimit()
+android.support.v4.view.ViewPager: void setOffscreenPageLimit(int)
+android.support.v4.view.ViewPager: void setPageMargin(int)
+android.support.v4.view.ViewPager: int getPageMargin()
+android.support.v4.view.ViewPager: void setPageMarginDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.ViewPager: void setPageMarginDrawable(int)
+android.support.v4.view.ViewPager: void setScrollingCacheEnabled(boolean)
+android.support.v4.view.ViewPager$SavedState
+android.support.v4.view.ViewPager$SavedState: android.os.Parcelable$Creator CREATOR
+com.akibb.numastropro.About
+com.akibb.numastropro.About: About()
+com.akibb.numastropro.AboutUs
+com.akibb.numastropro.AboutUs: AboutUs()
+com.akibb.numastropro.Color
+com.akibb.numastropro.Color: Color()
+com.akibb.numastropro.Destiny
+com.akibb.numastropro.Destiny: Destiny()
+com.akibb.numastropro.Destiny: void onClick(android.view.View)
+com.akibb.numastropro.Intro
+com.akibb.numastropro.Intro: Intro()
+com.akibb.numastropro.Match
+com.akibb.numastropro.Match: Match()
+com.akibb.numastropro.Menu
+com.akibb.numastropro.Menu: Menu()
+com.akibb.numastropro.Menu: void onClick(android.view.View)
+com.akibb.numastropro.Perdict
+com.akibb.numastropro.Perdict: Perdict()
+com.akibb.numastropro.R$dimen: int textsize
+com.akibb.numastropro.R$drawable: int first
+com.akibb.numastropro.R$drawable: int fr
+com.akibb.numastropro.R$drawable: int ic_launcher
+com.akibb.numastropro.R$drawable: int num
+com.akibb.numastropro.R$drawable: int round
+com.akibb.numastropro.R$id: int Exit
+com.akibb.numastropro.R$id: int aboutapp
+com.akibb.numastropro.R$id: int bCol
+com.akibb.numastropro.R$id: int bDes
+com.akibb.numastropro.R$id: int bE
+com.akibb.numastropro.R$id: int bMac
+com.akibb.numastropro.R$id: int bSub
+com.akibb.numastropro.R$id: int credits
+com.akibb.numastropro.R$id: int etDay
+com.akibb.numastropro.R$id: int etMonth
+com.akibb.numastropro.R$id: int etYear
+com.akibb.numastropro.R$id: int menu_settings
+com.akibb.numastropro.R$id: int scrollView1
+com.akibb.numastropro.R$id: int spM1
+com.akibb.numastropro.R$id: int spM2
+com.akibb.numastropro.R$id: int spinner1
+com.akibb.numastropro.R$id: int startAppBanner
+com.akibb.numastropro.R$id: int textView1
+com.akibb.numastropro.R$id: int tvArec
+com.akibb.numastropro.R$id: int tvCC
+com.akibb.numastropro.R$id: int tvColor
+com.akibb.numastropro.R$id: int tvQ
+com.akibb.numastropro.R$id: int tvTT
+com.akibb.numastropro.R$layout: int about
+com.akibb.numastropro.R$layout: int color
+com.akibb.numastropro.R$layout: int destiny
+com.akibb.numastropro.R$layout: int developers
+com.akibb.numastropro.R$layout: int match
+com.akibb.numastropro.R$layout: int menu
+com.akibb.numastropro.R$layout: int perdict
+com.akibb.numastropro.R$layout: int start
+com.akibb.numastropro.R$menu: int avant_grade_menu
+com.akibb.numastropro.R$menu: int destiny
+com.akibb.numastropro.R$menu: int main_menu
+com.akibb.numastropro.R$string: int app_name
+com.akibb.numastropro.R$string: int hello_world
+com.akibb.numastropro.R$string: int menu_settings
+com.akibb.numastropro.R$style: int AppBaseTheme
+com.akibb.numastropro.R$style: int AppTheme
+com.searchboxsdk.android.a.a$a: com.searchboxsdk.android.a.a$a[] values()
+com.searchboxsdk.android.a.a$a: com.searchboxsdk.android.a.a$a valueOf(java.lang.String)
+com.searchboxsdk.android.b.b$a: com.searchboxsdk.android.b.b$a[] values()
+com.searchboxsdk.android.b.b$a: com.searchboxsdk.android.b.b$a valueOf(java.lang.String)
+com.searchboxsdk.android.d.a: com.searchboxsdk.android.d.a[] values()
+com.searchboxsdk.android.d.a: com.searchboxsdk.android.d.a valueOf(java.lang.String)
+com.searchboxsdk.android.util.sliding.DrawerLayout: void setScrimColor(int)
+com.searchboxsdk.android.util.sliding.DrawerLayout: void setDrawerListener(com.searchboxsdk.android.util.sliding.DrawerLayout$b)
+com.searchboxsdk.android.util.sliding.DrawerLayout: void setDrawerLockMode(int)
+com.searchboxsdk.android.util.sliding.DrawerLayout$SavedState
+com.searchboxsdk.android.util.sliding.DrawerLayout$SavedState: android.os.Parcelable$Creator CREATOR
+com.startapp.android.eula.EULAActivity
+com.startapp.android.eula.EULAActivity: EULAActivity()
+com.startapp.android.eula.EULAManager$a: com.startapp.android.eula.EULAManager$a[] values()
+com.startapp.android.eula.EULAManager$a: com.startapp.android.eula.EULAManager$a valueOf(java.lang.String)
+com.startapp.android.eula.a.a: com.startapp.android.eula.a.a[] values()
+com.startapp.android.eula.a.a: com.startapp.android.eula.a.a valueOf(java.lang.String)
+com.startapp.android.eula.model.SDKVersion: com.startapp.android.eula.model.SDKVersion[] values()
+com.startapp.android.eula.model.SDKVersion: com.startapp.android.eula.model.SDKVersion valueOf(java.lang.String)
+com.startapp.android.publish.Ad$AdState: com.startapp.android.publish.Ad$AdState[] values()
+com.startapp.android.publish.Ad$AdState: com.startapp.android.publish.Ad$AdState valueOf(java.lang.String)
+com.startapp.android.publish.AppWallActivity
+com.startapp.android.publish.AppWallActivity: AppWallActivity()
+com.startapp.android.publish.StartAppAd$AdMode: com.startapp.android.publish.StartAppAd$AdMode[] values()
+com.startapp.android.publish.StartAppAd$AdMode: com.startapp.android.publish.StartAppAd$AdMode valueOf(java.lang.String)
+com.startapp.android.publish.banner.Banner
+com.startapp.android.publish.banner.Banner: Banner(android.content.Context)
+com.startapp.android.publish.banner.Banner: Banner(android.content.Context,android.util.AttributeSet)
+com.startapp.android.publish.banner.Banner: Banner(android.content.Context,android.util.AttributeSet,int)
+com.startapp.android.publish.banner.Banner$BType: com.startapp.android.publish.banner.Banner$BType[] values()
+com.startapp.android.publish.banner.Banner$BType: com.startapp.android.publish.banner.Banner$BType valueOf(java.lang.String)
+com.startapp.android.publish.banner.Banner$SavedState
+com.startapp.android.publish.banner.Banner$SavedState: android.os.Parcelable$Creator CREATOR
+com.startapp.android.publish.banner.BannerOptions
+com.startapp.android.publish.banner.BannerOptions: android.os.Parcelable$Creator CREATOR
+com.startapp.android.publish.banner.banner3d.Banner3D: void setBannerOptions(com.startapp.android.publish.banner.BannerOptions)
+com.startapp.android.publish.banner.banner3d.Banner3D: android.graphics.Bitmap getCurrentBitmap()
+com.startapp.android.publish.banner.banner3d.Banner3D: android.graphics.Bitmap getPreviousBitmap()
+com.startapp.android.publish.banner.banner3d.Banner3D$SavedState
+com.startapp.android.publish.banner.banner3d.Banner3D$SavedState: android.os.Parcelable$Creator CREATOR
+com.startapp.android.publish.banner.banner3d.b: void setText(java.lang.String)
+com.startapp.android.publish.banner.banner3d.b: void setImage(android.graphics.Bitmap)
+com.startapp.android.publish.banner.banner3d.b: void setRating(float)
+com.startapp.android.publish.banner.banner3d.b: void setDescription(java.lang.String)
+com.startapp.android.publish.banner.banner3d.b: com.startapp.android.publish.banner.banner3d.b$a getTemplateBySize()
+com.startapp.android.publish.banner.banner3d.b$a: com.startapp.android.publish.banner.banner3d.b$a[] values()
+com.startapp.android.publish.banner.banner3d.b$a: com.startapp.android.publish.banner.banner3d.b$a valueOf(java.lang.String)
+com.startapp.android.publish.c.a: com.startapp.android.publish.c.a[] values()
+com.startapp.android.publish.c.a: com.startapp.android.publish.c.a valueOf(java.lang.String)
+com.startapp.android.publish.d: android.view.WindowManager$LayoutParams getWmParams()
+com.startapp.android.publish.d: void setOfferWall(java.lang.String)
+com.startapp.android.publish.d: void setUrl(java.lang.String)
+com.startapp.android.publish.d: void setTrackingUrl(java.lang.String[])
+com.startapp.android.publish.d: void setSmartRedirect(boolean[])
+com.startapp.android.publish.d.i: void setRating(float)
+com.startapp.android.publish.list3d.Dynamics
+com.startapp.android.publish.list3d.List3DActivity
+com.startapp.android.publish.list3d.List3DActivity: List3DActivity()
+com.startapp.android.publish.list3d.ListItem
+com.startapp.android.publish.list3d.ListItem: android.os.Parcelable$Creator CREATOR
+com.startapp.android.publish.list3d.SimpleDynamics
+com.startapp.android.publish.list3d.SimpleDynamics: android.os.Parcelable$Creator CREATOR
+com.startapp.android.publish.list3d.c: void setTag(java.lang.String)
+com.startapp.android.publish.list3d.c: void setHint(boolean)
+com.startapp.android.publish.list3d.c: void setFade(boolean)
+com.startapp.android.publish.list3d.c: void setAdapter(android.widget.Adapter)
+com.startapp.android.publish.list3d.c: android.widget.Adapter getAdapter()
+com.startapp.android.publish.list3d.c: void setSelection(int)
+com.startapp.android.publish.list3d.c: android.view.View getSelectedView()
+com.startapp.android.publish.list3d.c: void setDynamics(com.startapp.android.publish.list3d.Dynamics)
+com.startapp.android.publish.list3d.c: android.view.View getCachedView()
+com.startapp.android.publish.list3d.c: int getFirstItemPosition()
+com.startapp.android.publish.list3d.c: int getLastItemPosition()
+com.startapp.android.publish.list3d.e: com.startapp.android.publish.list3d.e[] values()
+com.startapp.android.publish.list3d.e: com.startapp.android.publish.list3d.e valueOf(java.lang.String)
+com.startapp.android.publish.list3d.g: android.view.WindowManager$LayoutParams getWmParams()
+com.startapp.android.publish.list3d.g: int getStatusBarHeight()
+com.startapp.android.publish.model.AdDetails
+com.startapp.android.publish.model.AdDetails: android.os.Parcelable$Creator CREATOR
+com.startapp.android.publish.model.AdPreferences$Placement: com.startapp.android.publish.model.AdPreferences$Placement[] values()
+com.startapp.android.publish.model.AdPreferences$Placement: com.startapp.android.publish.model.AdPreferences$Placement valueOf(java.lang.String)
+com.startapp.android.publish.model.MetaData: com.startapp.android.publish.model.MetaData[] values()
+com.startapp.android.publish.model.MetaData: com.startapp.android.publish.model.MetaData valueOf(java.lang.String)

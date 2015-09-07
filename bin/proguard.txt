@@ -1,0 +1,36 @@
+# view AndroidManifest.xml #generated:112
+-keep class com.akibb.numastropro.About { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.akibb.numastropro.AboutUs { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.akibb.numastropro.Color { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.akibb.numastropro.Destiny { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class com.akibb.numastropro.Intro { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.akibb.numastropro.Match { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.akibb.numastropro.Menu { <init>(...); }
+
+# view AndroidManifest.xml #generated:96
+-keep class com.akibb.numastropro.Perdict { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class com.startapp.android.eula.EULAActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.startapp.android.publish.AppWallActivity { <init>(...); }
+
+# view res/layout/perdict.xml #generated:13
+-keep class com.startapp.android.publish.banner.Banner { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.startapp.android.publish.list3d.List3DActivity { <init>(...); }
+

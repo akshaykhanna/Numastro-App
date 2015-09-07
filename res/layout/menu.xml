@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/first" 
+    android:weightSum="100"> <!-- Background image -->
+
+ <LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="16.66"></LinearLayout>
+   
+    <Button
+        android:id="@+id/bDes"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Numerlogy" 
+        android:layout_gravity="center"
+       android:textColor="#009933"
+       android:background="@android:color/transparent" 
+       android:textSize="25sp"
+         android:layout_weight="16.66"
+        />
+
+    <Button
+        android:id="@+id/bMac"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Matchmaking"  
+        android:layout_gravity="center" 
+        android:layout_marginTop="5sp"
+         android:background="@android:color/transparent" 
+         android:textColor="#ff0033"
+         android:textSize="25sp"
+          android:layout_weight="16.66"
+         />
+
+    <Button
+        android:id="@+id/bCol"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="5sp"
+        android:background="@android:color/transparent" 
+        android:text="What ur color says!"
+        android:textColor="#3300ff" 
+        android:textSize="25sp"
+         android:layout_weight="16.66"
+         />
+       
+       <Button
+           android:id="@+id/bE"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_gravity="center"
+           android:layout_marginTop="5sp"
+         android:background="@android:color/transparent" 
+         android:textColor="#000000"
+        android:text="Exit"
+        android:textSize="25sp"
+         android:layout_weight="16.66"
+           />
+      <LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="16.66"></LinearLayout>
+</LinearLayout>

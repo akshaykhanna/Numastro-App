@@ -1,0 +1,3704 @@
+android.support.v4.app.ActivityCompatHoneycomb -> android.support.v4.app.a:
+    void invalidateOptionsMenu(android.app.Activity) -> a
+android.support.v4.app.BackStackRecord -> android.support.v4.app.b:
+    android.support.v4.app.FragmentManagerImpl mManager -> a
+    android.support.v4.app.BackStackRecord$Op mHead -> b
+    android.support.v4.app.BackStackRecord$Op mTail -> c
+    int mNumOp -> d
+    int mEnterAnim -> e
+    int mExitAnim -> f
+    int mPopEnterAnim -> g
+    int mPopExitAnim -> h
+    int mTransition -> i
+    int mTransitionStyle -> j
+    boolean mAddToBackStack -> k
+    boolean mAllowAddToBackStack -> l
+    java.lang.String mName -> m
+    boolean mCommitted -> n
+    int mIndex -> o
+    int mBreadCrumbTitleRes -> p
+    java.lang.CharSequence mBreadCrumbTitleText -> q
+    int mBreadCrumbShortTitleRes -> r
+    java.lang.CharSequence mBreadCrumbShortTitleText -> s
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void dump(java.lang.String,java.io.PrintWriter,boolean) -> a
+    void addOp(android.support.v4.app.BackStackRecord$Op) -> a
+    android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String) -> a
+    void doAddOp(int,android.support.v4.app.Fragment,java.lang.String,int) -> a
+    android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment) -> a
+    android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment) -> b
+    void bumpBackStackNesting(int) -> a
+    int commit() -> a
+    int commitInternal(boolean) -> a
+    void run() -> run
+    void popFromBackStack(boolean) -> b
+    java.lang.String getName() -> b
+android.support.v4.app.BackStackRecord$Op -> android.support.v4.app.c:
+    android.support.v4.app.BackStackRecord$Op next -> a
+    android.support.v4.app.BackStackRecord$Op prev -> b
+    int cmd -> c
+    android.support.v4.app.Fragment fragment -> d
+    int enterAnim -> e
+    int exitAnim -> f
+    int popEnterAnim -> g
+    int popExitAnim -> h
+    java.util.ArrayList removed -> i
+android.support.v4.app.BackStackState -> android.support.v4.app.BackStackState:
+    int[] mOps -> a
+    int mTransition -> b
+    int mTransitionStyle -> c
+    java.lang.String mName -> d
+    int mIndex -> e
+    int mBreadCrumbTitleRes -> f
+    java.lang.CharSequence mBreadCrumbTitleText -> g
+    int mBreadCrumbShortTitleRes -> h
+    java.lang.CharSequence mBreadCrumbShortTitleText -> i
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    android.support.v4.app.BackStackRecord instantiate(android.support.v4.app.FragmentManagerImpl) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.BackStackState$1 -> android.support.v4.app.d:
+    android.support.v4.app.BackStackState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.BackStackState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.Fragment -> android.support.v4.app.Fragment:
+    java.util.HashMap sClassMap -> P
+    int mState -> a
+    android.view.View mAnimatingAway -> b
+    int mStateAfterAnimating -> c
+    android.os.Bundle mSavedFragmentState -> d
+    android.util.SparseArray mSavedViewState -> e
+    int mIndex -> f
+    java.lang.String mWho -> g
+    android.os.Bundle mArguments -> h
+    android.support.v4.app.Fragment mTarget -> i
+    int mTargetIndex -> j
+    int mTargetRequestCode -> k
+    boolean mAdded -> l
+    boolean mRemoving -> m
+    boolean mResumed -> n
+    boolean mFromLayout -> o
+    boolean mInLayout -> p
+    boolean mRestored -> q
+    int mBackStackNesting -> r
+    android.support.v4.app.FragmentManagerImpl mFragmentManager -> s
+    android.support.v4.app.FragmentActivity mActivity -> t
+    android.support.v4.app.FragmentManagerImpl mChildFragmentManager -> u
+    android.support.v4.app.Fragment mParentFragment -> v
+    int mFragmentId -> w
+    int mContainerId -> x
+    java.lang.String mTag -> y
+    boolean mHidden -> z
+    boolean mDetached -> A
+    boolean mRetainInstance -> B
+    boolean mRetaining -> C
+    boolean mHasMenu -> D
+    boolean mMenuVisible -> E
+    boolean mCalled -> F
+    int mNextAnim -> G
+    android.view.ViewGroup mContainer -> H
+    android.view.View mView -> I
+    android.view.View mInnerView -> J
+    boolean mDeferStart -> K
+    boolean mUserVisibleHint -> L
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> M
+    boolean mLoadersStarted -> N
+    boolean mCheckedForLoaderManager -> O
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String) -> a
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String,android.os.Bundle) -> a
+    void restoreViewState(android.os.Bundle) -> a
+    void setIndex(int,android.support.v4.app.Fragment) -> a
+    boolean isInBackStack() -> a
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    android.support.v4.app.FragmentActivity getActivity() -> b
+    android.content.res.Resources getResources() -> c
+    boolean isDetached() -> d
+    void onHiddenChanged(boolean) -> a
+    void onActivityResult(int,int,android.content.Intent) -> a
+    android.view.LayoutInflater getLayoutInflater(android.os.Bundle) -> b
+    void onInflate(android.app.Activity,android.util.AttributeSet,android.os.Bundle) -> a
+    void onAttach(android.app.Activity) -> a
+    android.view.animation.Animation onCreateAnimation(int,boolean,int) -> a
+    void onCreate(android.os.Bundle) -> c
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    void onViewCreated(android.view.View,android.os.Bundle) -> a
+    void onActivityCreated(android.os.Bundle) -> d
+    void onViewStateRestored(android.os.Bundle) -> e
+    void onStart() -> e
+    void onResume() -> f
+    void onSaveInstanceState(android.os.Bundle) -> f
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onPause() -> g
+    void onStop() -> h
+    void onLowMemory() -> onLowMemory
+    void onDestroyView() -> i
+    void onDestroy() -> j
+    void initState() -> k
+    void onDetach() -> l
+    void onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    void onPrepareOptionsMenu(android.view.Menu) -> a
+    void onDestroyOptionsMenu() -> m
+    boolean onOptionsItemSelected(android.view.MenuItem) -> a
+    void onOptionsMenuClosed(android.view.Menu) -> b
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> b
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void instantiateChildFragmentManager() -> n
+    void performCreate(android.os.Bundle) -> g
+    android.view.View performCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> b
+    void performActivityCreated(android.os.Bundle) -> h
+    void performStart() -> o
+    void performResume() -> p
+    void performConfigurationChanged(android.content.res.Configuration) -> a
+    void performLowMemory() -> q
+    boolean performCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> b
+    boolean performPrepareOptionsMenu(android.view.Menu) -> c
+    boolean performOptionsItemSelected(android.view.MenuItem) -> c
+    boolean performContextItemSelected(android.view.MenuItem) -> d
+    void performOptionsMenuClosed(android.view.Menu) -> d
+    void performSaveInstanceState(android.os.Bundle) -> i
+    void performPause() -> r
+    void performStop() -> s
+    void performReallyStop() -> t
+    void performDestroyView() -> u
+    void performDestroy() -> v
+android.support.v4.app.Fragment$1 -> android.support.v4.app.e:
+    android.support.v4.app.Fragment this$0 -> a
+    android.view.View findViewById(int) -> a
+android.support.v4.app.Fragment$InstantiationException -> android.support.v4.app.f:
+android.support.v4.app.Fragment$SavedState -> android.support.v4.app.Fragment$SavedState:
+    android.os.Bundle mState -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.Fragment$SavedState$1 -> android.support.v4.app.g:
+    android.support.v4.app.Fragment$SavedState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.Fragment$SavedState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentActivity -> android.support.v4.app.h:
+    android.os.Handler mHandler -> a
+    android.support.v4.app.FragmentManagerImpl mFragments -> b
+    android.support.v4.app.FragmentContainer mContainer -> c
+    boolean mCreated -> d
+    boolean mResumed -> e
+    boolean mStopped -> f
+    boolean mReallyStopped -> g
+    boolean mRetaining -> h
+    boolean mOptionsMenuInvalidated -> i
+    boolean mCheckedForLoaderManager -> j
+    boolean mLoadersStarted -> k
+    java.util.HashMap mAllLoaderManagers -> l
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> m
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onBackPressed() -> onBackPressed
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreatePanelMenu(int,android.view.Menu) -> onCreatePanelMenu
+    android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet) -> onCreateView
+    void onDestroy() -> onDestroy
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onLowMemory() -> onLowMemory
+    boolean onMenuItemSelected(int,android.view.MenuItem) -> onMenuItemSelected
+    void onPanelClosed(int,android.view.Menu) -> onPanelClosed
+    void onPause() -> onPause
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onResume() -> onResume
+    void onPostResume() -> onPostResume
+    void onResumeFragments() -> a
+    boolean onPreparePanel(int,android.view.View,android.view.Menu) -> onPreparePanel
+    java.lang.Object onRetainNonConfigurationInstance() -> onRetainNonConfigurationInstance
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void onStart() -> onStart
+    void onStop() -> onStop
+    java.lang.Object onRetainCustomNonConfigurationInstance() -> b
+    void supportInvalidateOptionsMenu() -> c
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> dump
+    java.lang.String viewToString(android.view.View) -> a
+    void dumpViewHierarchy(java.lang.String,java.io.PrintWriter,android.view.View) -> a
+    void doReallyStop(boolean) -> a
+    void onReallyStop() -> d
+    void onAttachFragment(android.support.v4.app.Fragment) -> a
+    void startActivityForResult(android.content.Intent,int) -> startActivityForResult
+    void invalidateSupportFragment(java.lang.String) -> a
+    android.support.v4.app.LoaderManagerImpl getLoaderManager(java.lang.String,boolean,boolean) -> a
+android.support.v4.app.FragmentActivity$FragmentTag -> android.support.v4.app.i:
+    int[] Fragment -> a
+android.support.v4.app.FragmentActivity$NonConfigurationInstances -> android.support.v4.app.j:
+    java.lang.Object activity -> a
+    java.lang.Object custom -> b
+    java.util.HashMap children -> c
+    java.util.ArrayList fragments -> d
+    java.util.HashMap loaders -> e
+android.support.v4.app.FragmentContainer -> android.support.v4.app.k:
+    android.view.View findViewById(int) -> a
+android.support.v4.app.FragmentManager -> android.support.v4.app.l:
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    boolean executePendingTransactions() -> b
+    android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+android.support.v4.app.FragmentManager$OnBackStackChangedListener -> android.support.v4.app.m:
+    void onBackStackChanged() -> a
+android.support.v4.app.FragmentManagerImpl -> android.support.v4.app.n:
+    boolean DEBUG -> a
+    boolean HONEYCOMB -> b
+    java.util.ArrayList mPendingActions -> c
+    java.lang.Runnable[] mTmpActions -> d
+    boolean mExecutingActions -> e
+    java.util.ArrayList mActive -> f
+    java.util.ArrayList mAdded -> g
+    java.util.ArrayList mAvailIndices -> h
+    java.util.ArrayList mBackStack -> i
+    java.util.ArrayList mCreatedMenus -> j
+    java.util.ArrayList mBackStackIndices -> k
+    java.util.ArrayList mAvailBackStackIndices -> l
+    java.util.ArrayList mBackStackChangeListeners -> m
+    int mCurState -> n
+    android.support.v4.app.FragmentActivity mActivity -> o
+    android.support.v4.app.FragmentContainer mContainer -> p
+    android.support.v4.app.Fragment mParent -> q
+    boolean mNeedMenuInvalidate -> r
+    boolean mStateSaved -> s
+    boolean mDestroyed -> t
+    java.lang.String mNoTransactionsBecause -> u
+    boolean mHavePendingDeferredStart -> v
+    android.os.Bundle mStateBundle -> w
+    android.util.SparseArray mStateArray -> x
+    java.lang.Runnable mExecCommit -> y
+    android.view.animation.Interpolator DECELERATE_QUINT -> z
+    android.view.animation.Interpolator DECELERATE_CUBIC -> A
+    android.view.animation.Interpolator ACCELERATE_QUINT -> B
+    android.view.animation.Interpolator ACCELERATE_CUBIC -> C
+    void throwException(java.lang.RuntimeException) -> a
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    boolean executePendingTransactions() -> b
+    boolean popBackStackImmediate() -> c
+    void putFragment(android.os.Bundle,java.lang.String,android.support.v4.app.Fragment) -> a
+    android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    android.view.animation.Animation makeOpenCloseAnimation(android.content.Context,float,float,float,float) -> a
+    android.view.animation.Animation makeFadeAnimation(android.content.Context,float,float) -> a
+    android.view.animation.Animation loadAnimation(android.support.v4.app.Fragment,int,boolean,int) -> a
+    void performPendingDeferredStart(android.support.v4.app.Fragment) -> a
+    void moveToState(android.support.v4.app.Fragment,int,int,int,boolean) -> a
+    void moveToState(android.support.v4.app.Fragment) -> b
+    void moveToState(int,boolean) -> a
+    void moveToState(int,int,int,boolean) -> a
+    void startPendingDeferredFragments() -> d
+    void makeActive(android.support.v4.app.Fragment) -> c
+    void makeInactive(android.support.v4.app.Fragment) -> d
+    void addFragment(android.support.v4.app.Fragment,boolean) -> a
+    void removeFragment(android.support.v4.app.Fragment,int,int) -> a
+    void hideFragment(android.support.v4.app.Fragment,int,int) -> b
+    void showFragment(android.support.v4.app.Fragment,int,int) -> c
+    void detachFragment(android.support.v4.app.Fragment,int,int) -> d
+    void attachFragment(android.support.v4.app.Fragment,int,int) -> e
+    android.support.v4.app.Fragment findFragmentById(int) -> a
+    android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+    void checkStateLoss() -> t
+    void enqueueAction(java.lang.Runnable,boolean) -> a
+    int allocBackStackIndex(android.support.v4.app.BackStackRecord) -> a
+    void setBackStackIndex(int,android.support.v4.app.BackStackRecord) -> a
+    void freeBackStackIndex(int) -> b
+    boolean execPendingActions() -> e
+    void reportBackStackChanged() -> f
+    void addBackStackState(android.support.v4.app.BackStackRecord) -> b
+    boolean popBackStackState(android.os.Handler,java.lang.String,int,int) -> a
+    java.util.ArrayList retainNonConfig() -> g
+    void saveFragmentViewState(android.support.v4.app.Fragment) -> e
+    android.os.Bundle saveFragmentBasicState(android.support.v4.app.Fragment) -> f
+    android.os.Parcelable saveAllState() -> h
+    void restoreAllState(android.os.Parcelable,java.util.ArrayList) -> a
+    void attachActivity(android.support.v4.app.FragmentActivity,android.support.v4.app.FragmentContainer,android.support.v4.app.Fragment) -> a
+    void noteStateNotSaved() -> i
+    void dispatchCreate() -> j
+    void dispatchActivityCreated() -> k
+    void dispatchStart() -> l
+    void dispatchResume() -> m
+    void dispatchPause() -> n
+    void dispatchStop() -> o
+    void dispatchReallyStop() -> p
+    void dispatchDestroyView() -> q
+    void dispatchDestroy() -> r
+    void dispatchConfigurationChanged(android.content.res.Configuration) -> a
+    void dispatchLowMemory() -> s
+    boolean dispatchCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean dispatchPrepareOptionsMenu(android.view.Menu) -> a
+    boolean dispatchOptionsItemSelected(android.view.MenuItem) -> a
+    boolean dispatchContextItemSelected(android.view.MenuItem) -> b
+    void dispatchOptionsMenuClosed(android.view.Menu) -> b
+    int reverseTransit(int) -> c
+    int transitToStyleIndex(int,boolean) -> b
+android.support.v4.app.FragmentManagerImpl$1 -> android.support.v4.app.o:
+    android.support.v4.app.FragmentManagerImpl this$0 -> a
+    void run() -> run
+android.support.v4.app.FragmentManagerImpl$5 -> android.support.v4.app.p:
+    android.support.v4.app.Fragment val$fragment -> a
+    android.support.v4.app.FragmentManagerImpl this$0 -> b
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+android.support.v4.app.FragmentManagerState -> android.support.v4.app.FragmentManagerState:
+    android.support.v4.app.FragmentState[] mActive -> a
+    int[] mAdded -> b
+    android.support.v4.app.BackStackState[] mBackStack -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentManagerState$1 -> android.support.v4.app.q:
+    android.support.v4.app.FragmentManagerState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.FragmentManagerState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentState -> android.support.v4.app.FragmentState:
+    java.lang.String mClassName -> a
+    int mIndex -> b
+    boolean mFromLayout -> c
+    int mFragmentId -> d
+    int mContainerId -> e
+    java.lang.String mTag -> f
+    boolean mRetainInstance -> g
+    boolean mDetached -> h
+    android.os.Bundle mArguments -> i
+    android.os.Bundle mSavedFragmentState -> j
+    android.support.v4.app.Fragment mInstance -> k
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    android.support.v4.app.Fragment instantiate(android.support.v4.app.FragmentActivity,android.support.v4.app.Fragment) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentState$1 -> android.support.v4.app.r:
+    android.support.v4.app.FragmentState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.FragmentState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentTabHost -> android.support.v4.app.FragmentTabHost:
+    java.util.ArrayList mTabs -> a
+    android.content.Context mContext -> b
+    android.support.v4.app.FragmentManager mFragmentManager -> c
+    int mContainerId -> d
+    android.widget.TabHost$OnTabChangeListener mOnTabChangeListener -> e
+    android.support.v4.app.FragmentTabHost$TabInfo mLastTab -> f
+    boolean mAttached -> g
+    void setup() -> setup
+    void setOnTabChangedListener(android.widget.TabHost$OnTabChangeListener) -> setOnTabChangedListener
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    void onTabChanged(java.lang.String) -> onTabChanged
+    android.support.v4.app.FragmentTransaction doTabChanged(java.lang.String,android.support.v4.app.FragmentTransaction) -> a
+android.support.v4.app.FragmentTabHost$1 -> android.support.v4.app.s:
+android.support.v4.app.FragmentTabHost$SavedState -> android.support.v4.app.FragmentTabHost$SavedState:
+    java.lang.String curTab -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    java.lang.String toString() -> toString
+android.support.v4.app.FragmentTabHost$SavedState$1 -> android.support.v4.app.t:
+    android.support.v4.app.FragmentTabHost$SavedState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.FragmentTabHost$SavedState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentTabHost$TabInfo -> android.support.v4.app.u:
+    java.lang.String tag -> a
+    java.lang.Class clss -> b
+    android.os.Bundle args -> c
+    android.support.v4.app.Fragment fragment -> d
+    android.support.v4.app.Fragment access$102(android.support.v4.app.FragmentTabHost$TabInfo,android.support.v4.app.Fragment) -> a
+    android.support.v4.app.Fragment access$100(android.support.v4.app.FragmentTabHost$TabInfo) -> a
+    java.lang.String access$200(android.support.v4.app.FragmentTabHost$TabInfo) -> b
+    java.lang.Class access$300(android.support.v4.app.FragmentTabHost$TabInfo) -> c
+    android.os.Bundle access$400(android.support.v4.app.FragmentTabHost$TabInfo) -> d
+android.support.v4.app.FragmentTransaction -> android.support.v4.app.v:
+    android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String) -> a
+    android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment) -> a
+    android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment) -> b
+    int commit() -> a
+android.support.v4.app.LoaderManager -> android.support.v4.app.w:
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManager$LoaderCallbacks -> android.support.v4.app.x:
+    android.support.v4.content.Loader onCreateLoader(int,android.os.Bundle) -> a
+    void onLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+    void onLoaderReset(android.support.v4.content.Loader) -> a
+android.support.v4.app.LoaderManagerImpl -> android.support.v4.app.y:
+    boolean DEBUG -> a
+    android.support.v4.util.SparseArrayCompat mLoaders -> b
+    android.support.v4.util.SparseArrayCompat mInactiveLoaders -> c
+    java.lang.String mWho -> d
+    android.support.v4.app.FragmentActivity mActivity -> e
+    boolean mStarted -> f
+    boolean mRetaining -> g
+    void updateActivity(android.support.v4.app.FragmentActivity) -> a
+    void doStart() -> b
+    void doStop() -> c
+    void doRetain() -> d
+    void finishRetain() -> e
+    void doReportNextStart() -> f
+    void doReportStart() -> g
+    void doDestroy() -> h
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManagerImpl$LoaderInfo -> android.support.v4.app.z:
+    int mId -> a
+    android.os.Bundle mArgs -> b
+    android.support.v4.app.LoaderManager$LoaderCallbacks mCallbacks -> c
+    android.support.v4.content.Loader mLoader -> d
+    boolean mHaveData -> e
+    boolean mDeliveredData -> f
+    java.lang.Object mData -> g
+    boolean mStarted -> h
+    boolean mRetaining -> i
+    boolean mRetainingStarted -> j
+    boolean mReportNextStart -> k
+    boolean mDestroyed -> l
+    boolean mListenerRegistered -> m
+    android.support.v4.app.LoaderManagerImpl$LoaderInfo mPendingLoader -> n
+    android.support.v4.app.LoaderManagerImpl this$0 -> o
+    void start() -> a
+    void retain() -> b
+    void finishRetain() -> c
+    void reportStart() -> d
+    void stop() -> e
+    void destroy() -> f
+    void callOnLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.app.NoSaveStateFrameLayout -> android.support.v4.app.aa:
+    android.view.ViewGroup wrap(android.view.View) -> a
+    void dispatchSaveInstanceState(android.util.SparseArray) -> dispatchSaveInstanceState
+    void dispatchRestoreInstanceState(android.util.SparseArray) -> dispatchRestoreInstanceState
+android.support.v4.app.SuperNotCalledException -> android.support.v4.app.ab:
+android.support.v4.content.Loader -> android.support.v4.a.a:
+    int mId -> a
+    android.support.v4.content.Loader$OnLoadCompleteListener mListener -> b
+    boolean mStarted -> c
+    boolean mAbandoned -> d
+    boolean mReset -> e
+    boolean mContentChanged -> f
+    void registerListener(int,android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void unregisterListener(android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void startLoading() -> a
+    void onStartLoading() -> b
+    void stopLoading() -> c
+    void onStopLoading() -> d
+    void reset() -> e
+    void onReset() -> f
+    java.lang.String dataToString(java.lang.Object) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.content.Loader$OnLoadCompleteListener -> android.support.v4.a.b:
+android.support.v4.os.ParcelableCompat -> android.support.v4.b.a:
+    android.os.Parcelable$Creator newCreator(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
+android.support.v4.os.ParcelableCompat$CompatCreator -> android.support.v4.b.b:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+android.support.v4.os.ParcelableCompatCreatorCallbacks -> android.support.v4.b.c:
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
+    java.lang.Object[] newArray(int) -> a
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2 -> android.support.v4.b.d:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2Stub -> android.support.v4.b.e:
+    android.os.Parcelable$Creator instantiate(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
+android.support.v4.util.DebugUtils -> android.support.v4.c.a:
+    void buildShortClassTag(java.lang.Object,java.lang.StringBuilder) -> a
+android.support.v4.util.LogWriter -> android.support.v4.c.b:
+    java.lang.String mTag -> a
+    java.lang.StringBuilder mBuilder -> b
+    void close() -> close
+    void flush() -> flush
+    void write(char[],int,int) -> write
+    void flushBuilder() -> a
+android.support.v4.util.SparseArrayCompat -> android.support.v4.c.c:
+    java.lang.Object DELETED -> a
+    boolean mGarbage -> b
+    int[] mKeys -> c
+    java.lang.Object[] mValues -> d
+    int mSize -> e
+    void gc() -> c
+    int size() -> a
+    int keyAt(int) -> a
+    java.lang.Object valueAt(int) -> b
+    void clear() -> b
+    int idealByteArraySize(int) -> c
+    int idealIntArraySize(int) -> d
+android.support.v4.view.KeyEventCompat -> android.support.v4.view.a:
+    android.support.v4.view.KeyEventCompat$KeyEventVersionImpl IMPL -> a
+    boolean hasModifiers(android.view.KeyEvent,int) -> a
+    boolean hasNoModifiers(android.view.KeyEvent) -> a
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl -> android.support.v4.view.b:
+    int metaStateFilterDirectionalModifiers(int,int,int,int,int) -> a
+    int normalizeMetaState(int) -> a
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl -> android.support.v4.view.c:
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl -> android.support.v4.view.d:
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompatHoneycomb -> android.support.v4.view.e:
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> a
+android.support.v4.view.MotionEventCompat -> android.support.v4.view.f:
+    android.support.v4.view.MotionEventCompat$MotionEventVersionImpl IMPL -> a
+    int getActionIndex(android.view.MotionEvent) -> a
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$BaseMotionEventVersionImpl -> android.support.v4.view.g:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$EclairMotionEventVersionImpl -> android.support.v4.view.h:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$MotionEventVersionImpl -> android.support.v4.view.i:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompatEclair -> android.support.v4.view.j:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.PagerAdapter -> android.support.v4.view.k:
+    android.database.DataSetObservable mObservable -> a
+    int getCount() -> a
+    void startUpdate(android.view.ViewGroup) -> a
+    java.lang.Object instantiateItem(android.view.ViewGroup,int) -> a
+    void destroyItem(android.view.ViewGroup,int,java.lang.Object) -> a
+    void setPrimaryItem(android.view.ViewGroup,int,java.lang.Object) -> b
+    void finishUpdate(android.view.ViewGroup) -> b
+    void startUpdate(android.view.View) -> a
+    java.lang.Object instantiateItem(android.view.View,int) -> a
+    void destroyItem(android.view.View,int,java.lang.Object) -> a
+    void setPrimaryItem(android.view.View,int,java.lang.Object) -> b
+    void finishUpdate(android.view.View) -> b
+    boolean isViewFromObject(android.view.View,java.lang.Object) -> a
+    android.os.Parcelable saveState() -> b
+    void restoreState(android.os.Parcelable,java.lang.ClassLoader) -> a
+    int getItemPosition(java.lang.Object) -> a
+    void registerDataSetObserver(android.database.DataSetObserver) -> a
+    void unregisterDataSetObserver(android.database.DataSetObserver) -> b
+    float getPageWidth(int) -> a
+android.support.v4.view.VelocityTrackerCompat -> android.support.v4.view.l:
+    android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl IMPL -> a
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl -> android.support.v4.view.m:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl -> android.support.v4.view.n:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl -> android.support.v4.view.o:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompatHoneycomb -> android.support.v4.view.p:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.ViewCompat -> android.support.v4.view.q:
+    android.support.v4.view.ViewCompat$ViewCompatImpl IMPL -> a
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+android.support.v4.view.ViewCompat$BaseViewCompatImpl -> android.support.v4.view.r:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+    long getFrameTime() -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+android.support.v4.view.ViewCompat$GBViewCompatImpl -> android.support.v4.view.s:
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewCompat$HCViewCompatImpl -> android.support.v4.view.t:
+    long getFrameTime() -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+android.support.v4.view.ViewCompat$ICSViewCompatImpl -> android.support.v4.view.u:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+android.support.v4.view.ViewCompat$JBViewCompatImpl -> android.support.v4.view.v:
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+android.support.v4.view.ViewCompat$JbMr1ViewCompatImpl -> android.support.v4.view.w:
+android.support.v4.view.ViewCompat$ViewCompatImpl -> android.support.v4.view.x:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+android.support.v4.view.ViewCompatGingerbread -> android.support.v4.view.y:
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewCompatHC -> android.support.v4.view.z:
+    long getFrameTime() -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+android.support.v4.view.ViewCompatICS -> android.support.v4.view.aa:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+android.support.v4.view.ViewCompatJB -> android.support.v4.view.ab:
+    void postInvalidateOnAnimation(android.view.View) -> a
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
+    int[] LAYOUT_ATTRS -> a
+    java.util.Comparator COMPARATOR -> b
+    android.view.animation.Interpolator sInterpolator -> c
+    java.util.ArrayList mItems -> d
+    android.support.v4.view.ViewPager$ItemInfo mTempItem -> e
+    android.graphics.Rect mTempRect -> f
+    android.support.v4.view.PagerAdapter mAdapter -> g
+    int mCurItem -> h
+    int mRestoredCurItem -> i
+    android.os.Parcelable mRestoredAdapterState -> j
+    java.lang.ClassLoader mRestoredClassLoader -> k
+    android.widget.Scroller mScroller -> l
+    android.support.v4.view.ViewPager$PagerObserver mObserver -> m
+    int mPageMargin -> n
+    android.graphics.drawable.Drawable mMarginDrawable -> o
+    int mTopPageBounds -> p
+    int mBottomPageBounds -> q
+    float mFirstOffset -> r
+    float mLastOffset -> s
+    int mChildWidthMeasureSpec -> t
+    int mChildHeightMeasureSpec -> u
+    boolean mInLayout -> v
+    boolean mScrollingCacheEnabled -> w
+    boolean mPopulatePending -> x
+    int mOffscreenPageLimit -> y
+    boolean mIsBeingDragged -> z
+    boolean mIsUnableToDrag -> A
+    int mDefaultGutterSize -> B
+    int mGutterSize -> C
+    int mTouchSlop -> D
+    float mInitialMotionX -> E
+    float mLastMotionX -> F
+    float mLastMotionY -> G
+    int mActivePointerId -> H
+    android.view.VelocityTracker mVelocityTracker -> I
+    int mMinimumVelocity -> J
+    int mMaximumVelocity -> K
+    int mFlingDistance -> L
+    int mCloseEnough -> M
+    int mSeenPositionMin -> N
+    int mSeenPositionMax -> O
+    boolean mFakeDragging -> P
+    android.support.v4.widget.EdgeEffectCompat mLeftEdge -> Q
+    android.support.v4.widget.EdgeEffectCompat mRightEdge -> R
+    boolean mFirstLayout -> S
+    boolean mNeedCalculatePageOffsets -> T
+    boolean mCalledSuper -> U
+    int mDecorChildCount -> V
+    android.support.v4.view.ViewPager$OnPageChangeListener mOnPageChangeListener -> W
+    android.support.v4.view.ViewPager$OnPageChangeListener mInternalPageChangeListener -> Z
+    android.support.v4.view.ViewPager$OnAdapterChangeListener mAdapterChangeListener -> aa
+    android.support.v4.view.ViewPager$PageTransformer mPageTransformer -> ab
+    java.lang.reflect.Method mSetChildrenDrawingOrderEnabled -> ac
+    int mDrawingOrder -> ad
+    java.util.ArrayList mDrawingOrderedChildren -> ae
+    android.support.v4.view.ViewPager$ViewPositionComparator sPositionComparator -> af
+    java.lang.Runnable mEndScrollRunnable -> ag
+    int mScrollState -> ah
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void setScrollState(int) -> setScrollState
+    void setAdapter(android.support.v4.view.PagerAdapter) -> setAdapter
+    void removeNonDecorViews() -> f
+    android.support.v4.view.PagerAdapter getAdapter() -> getAdapter
+    void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener) -> setOnAdapterChangeListener
+    void setCurrentItem(int) -> setCurrentItem
+    void setCurrentItem(int,boolean) -> a
+    int getCurrentItem() -> getCurrentItem
+    void setCurrentItemInternal(int,boolean,boolean) -> a
+    void setCurrentItemInternal(int,boolean,boolean,int) -> a
+    void scrollToItem(int,boolean,int,boolean) -> a
+    void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener) -> setOnPageChangeListener
+    void setChildrenDrawingOrderEnabledCompat(boolean) -> setChildrenDrawingOrderEnabledCompat
+    int getChildDrawingOrder(int,int) -> getChildDrawingOrder
+    int getOffscreenPageLimit() -> getOffscreenPageLimit
+    void setOffscreenPageLimit(int) -> setOffscreenPageLimit
+    void setPageMargin(int) -> setPageMargin
+    int getPageMargin() -> getPageMargin
+    void setPageMarginDrawable(android.graphics.drawable.Drawable) -> setPageMarginDrawable
+    void setPageMarginDrawable(int) -> setPageMarginDrawable
+    boolean verifyDrawable(android.graphics.drawable.Drawable) -> verifyDrawable
+    void drawableStateChanged() -> drawableStateChanged
+    float distanceInfluenceForSnapDuration(float) -> a
+    void smoothScrollTo(int,int,int) -> a
+    android.support.v4.view.ViewPager$ItemInfo addNewItem(int,int) -> a
+    void dataSetChanged() -> a
+    void populate() -> b
+    void populate(int) -> a
+    void calculatePageOffsets(android.support.v4.view.ViewPager$ItemInfo,int,android.support.v4.view.ViewPager$ItemInfo) -> a
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    void addView(android.view.View,int,android.view.ViewGroup$LayoutParams) -> addView
+    android.support.v4.view.ViewPager$ItemInfo infoForChild(android.view.View) -> a
+    android.support.v4.view.ViewPager$ItemInfo infoForAnyChild(android.view.View) -> b
+    android.support.v4.view.ViewPager$ItemInfo infoForPosition(int) -> b
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onMeasure(int,int) -> onMeasure
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void recomputeScrollPosition(int,int,int,int) -> a
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void computeScroll() -> computeScroll
+    boolean pageScrolled(int) -> d
+    void onPageScrolled(int,float,int) -> a
+    void completeScroll(boolean) -> a
+    boolean isGutterDrag(float,float) -> a
+    void enableLayers(boolean) -> b
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    boolean performDrag(float) -> b
+    android.support.v4.view.ViewPager$ItemInfo infoForCurrentScrollPosition() -> g
+    int determineTargetPage(int,float,int,int) -> a
+    void draw(android.graphics.Canvas) -> draw
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onSecondaryPointerUp(android.view.MotionEvent) -> a
+    void endDrag() -> h
+    void setScrollingCacheEnabled(boolean) -> setScrollingCacheEnabled
+    boolean canScroll(android.view.View,boolean,int,int,int) -> a
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    boolean executeKeyEvent(android.view.KeyEvent) -> a
+    boolean arrowScroll(int) -> c
+    android.graphics.Rect getChildRectInPagerCoordinates(android.graphics.Rect,android.view.View) -> a
+    boolean pageLeft() -> c
+    boolean pageRight() -> d
+    void addFocusables(java.util.ArrayList,int,int) -> addFocusables
+    void addTouchables(java.util.ArrayList) -> addTouchables
+    boolean onRequestFocusInDescendants(int,android.graphics.Rect) -> onRequestFocusInDescendants
+    boolean dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent) -> dispatchPopulateAccessibilityEvent
+    android.view.ViewGroup$LayoutParams generateDefaultLayoutParams() -> generateDefaultLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
+    boolean checkLayoutParams(android.view.ViewGroup$LayoutParams) -> checkLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet) -> generateLayoutParams
+    int[] access$400() -> e
+android.support.v4.view.ViewPager$1 -> android.support.v4.view.ac:
+    int compare(android.support.v4.view.ViewPager$ItemInfo,android.support.v4.view.ViewPager$ItemInfo) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+android.support.v4.view.ViewPager$2 -> android.support.v4.view.ad:
+    float getInterpolation(float) -> getInterpolation
+android.support.v4.view.ViewPager$Decor -> android.support.v4.view.ae:
+android.support.v4.view.ViewPager$ItemInfo -> android.support.v4.view.af:
+    java.lang.Object object -> a
+    int position -> b
+    boolean scrolling -> c
+    float widthFactor -> d
+    float offset -> e
+android.support.v4.view.ViewPager$LayoutParams -> android.support.v4.view.ag:
+    boolean isDecor -> a
+    int gravity -> b
+    float widthFactor -> c
+    boolean needsMeasure -> d
+    int position -> e
+    int childIndex -> f
+android.support.v4.view.ViewPager$OnAdapterChangeListener -> android.support.v4.view.ah:
+    void onAdapterChanged(android.support.v4.view.PagerAdapter,android.support.v4.view.PagerAdapter) -> a
+android.support.v4.view.ViewPager$OnPageChangeListener -> android.support.v4.view.ai:
+    void onPageScrolled(int,float,int) -> a
+    void onPageSelected(int) -> a
+    void onPageScrollStateChanged(int) -> b
+android.support.v4.view.ViewPager$PageTransformer -> android.support.v4.view.aj:
+    void transformPage(android.view.View,float) -> a
+android.support.v4.view.ViewPager$PagerObserver -> android.support.v4.view.ak:
+    android.support.v4.view.ViewPager this$0 -> a
+    void onChanged() -> onChanged
+    void onInvalidated() -> onInvalidated
+android.support.v4.view.ViewPager$SavedState -> android.support.v4.view.ViewPager$SavedState:
+    int position -> a
+    android.os.Parcelable adapterState -> b
+    java.lang.ClassLoader loader -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    java.lang.String toString() -> toString
+android.support.v4.view.ViewPager$SavedState$1 -> android.support.v4.view.al:
+    android.support.v4.view.ViewPager$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> b
+    android.support.v4.view.ViewPager$SavedState[] newArray(int) -> b
+    java.lang.Object[] newArray(int) -> a
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
+android.support.v4.view.ViewPager$ViewPositionComparator -> android.support.v4.view.am:
+    int compare(android.view.View,android.view.View) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+android.support.v4.widget.EdgeEffectCompat -> android.support.v4.d.a:
+    java.lang.Object mEdgeEffect -> a
+    android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl IMPL -> b
+    void setSize(int,int) -> a
+    boolean isFinished() -> a
+    void finish() -> b
+    boolean onPull(float) -> a
+    boolean onRelease() -> c
+    boolean draw(android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl -> android.support.v4.d.b:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl -> android.support.v4.d.c:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl -> android.support.v4.d.d:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompatIcs -> android.support.v4.d.e:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+com.akibb.numastropro.About -> com.akibb.numastropro.About:
+    android.widget.TextView tvQ -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+com.akibb.numastropro.AboutUs -> com.akibb.numastropro.AboutUs:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+com.akibb.numastropro.Color -> com.akibb.numastropro.Color:
+    android.widget.Spinner sp1 -> a
+    java.lang.String[] color -> b
+    java.lang.String[] value -> c
+    android.widget.TextView tv -> d
+    int p -> e
+    com.startapp.android.publish.StartAppAd startAppAd -> f
+    void onPause() -> onPause
+    void onCreate(android.os.Bundle) -> onCreate
+    void intialise() -> a
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.akibb.numastropro.Destiny -> com.akibb.numastropro.Destiny:
+    android.widget.EditText d -> a
+    android.widget.EditText m -> b
+    android.widget.EditText y -> c
+    android.widget.Button sub -> d
+    int n -> e
+    int mi -> f
+    com.startapp.android.publish.StartAppAd startAppAd -> g
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onCreate(android.os.Bundle) -> onCreate
+    void intialise() -> a
+    void onClick(android.view.View) -> onClick
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.akibb.numastropro.Intro -> com.akibb.numastropro.Intro:
+    void onResume() -> onResume
+    void onCreate(android.os.Bundle) -> onCreate
+    void onPause() -> onPause
+com.akibb.numastropro.Intro$1 -> com.akibb.numastropro.a:
+    com.akibb.numastropro.Intro this$0 -> a
+    void run() -> run
+com.akibb.numastropro.Match -> com.akibb.numastropro.Match:
+    java.lang.String[] s -> a
+    android.widget.Spinner sp1 -> b
+    android.widget.Spinner sp2 -> c
+    android.widget.TextView sign -> d
+    android.widget.TextView comp -> e
+    java.lang.String sTv -> f
+    int p1 -> g
+    int p2 -> h
+    int c -> i
+    int a -> j
+    int b -> k
+    int[] m100 -> l
+    int[] m0 -> m
+    java.lang.String[] per -> n
+    com.startapp.android.publish.StartAppAd startAppAd -> o
+    void onPause() -> onPause
+    void onCreate(android.os.Bundle) -> onCreate
+    void intialise() -> a
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void compatibilty(int) -> a
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.akibb.numastropro.Menu -> com.akibb.numastropro.Menu:
+    com.startapp.android.publish.StartAppAd startAppAd -> e
+    android.widget.Button des -> a
+    android.widget.Button mac -> b
+    android.widget.Button col -> c
+    android.widget.Button exit -> d
+    void onResume() -> onResume
+    void onBackPressed() -> onBackPressed
+    void onPause() -> onPause
+    void onCreate(android.os.Bundle) -> onCreate
+    void intialise() -> a
+    void onClick(android.view.View) -> onClick
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.akibb.numastropro.Perdict -> com.akibb.numastropro.Perdict:
+    java.lang.String[] p -> a
+    android.widget.TextView tvQ -> b
+    com.startapp.android.publish.StartAppAd startAppAd -> c
+    void onPause() -> onPause
+    void onCreate(android.os.Bundle) -> onCreate
+com.searchboxsdk.android.StartAppSearch -> com.searchboxsdk.android.a:
+    com.startapp.android.eula.EULAManager eulaManager -> a
+    void init(android.app.Activity,java.lang.String,java.lang.String) -> a
+    void init(android.app.Activity,java.lang.String,java.lang.String,boolean) -> a
+    void showSearchBox(android.app.Activity) -> a
+    void showSearchBox(android.app.Activity,boolean) -> a
+    void initSearchBox(android.app.Activity) -> c
+    void initEulaManager(android.app.Activity) -> d
+    void initDevicePage(android.content.Context) -> b
+    void access$000(android.content.Context) -> a
+    void access$100(android.app.Activity) -> b
+com.searchboxsdk.android.StartAppSearch$1 -> com.searchboxsdk.android.b:
+    android.app.Activity a -> a
+    void eulaAccepted() -> a
+    void eulaDeclined() -> b
+com.searchboxsdk.android.StartAppSearch$2 -> com.searchboxsdk.android.c:
+    android.app.Activity a -> a
+    void eulaAccepted() -> a
+    void eulaDeclined() -> b
+com.searchboxsdk.android.a.a -> com.searchboxsdk.android.a.a:
+    android.content.Context a -> a
+    java.lang.Object b -> b
+    java.lang.String c -> c
+    com.searchboxsdk.android.a.a$a d -> d
+    void a(com.searchboxsdk.android.a.a$a) -> a
+    java.lang.String a() -> a
+    void a(java.lang.String) -> a
+    boolean b() -> b
+    boolean a(com.searchboxsdk.android.b.b,com.searchboxsdk.android.a.b) -> a
+com.searchboxsdk.android.a.a$1 -> com.searchboxsdk.android.a.b:
+    com.searchboxsdk.android.a.b a -> a
+    com.searchboxsdk.android.a.a b -> b
+    void run() -> run
+com.searchboxsdk.android.a.a$a -> com.searchboxsdk.android.a.c:
+    com.searchboxsdk.android.a.a$a a -> a
+    com.searchboxsdk.android.a.a$a b -> b
+    com.searchboxsdk.android.a.a$a c -> c
+    com.searchboxsdk.android.a.a$a[] d -> d
+    com.searchboxsdk.android.a.a$a[] values() -> values
+    com.searchboxsdk.android.a.a$a valueOf(java.lang.String) -> valueOf
+com.searchboxsdk.android.a.b -> com.searchboxsdk.android.a.d:
+    void a(com.searchboxsdk.android.a.a) -> a
+    void b(com.searchboxsdk.android.a.a) -> b
+com.searchboxsdk.android.a.c -> com.searchboxsdk.android.a.e:
+    java.util.List d -> d
+    boolean a(com.searchboxsdk.android.b.b,com.searchboxsdk.android.a.b) -> a
+    void b(com.searchboxsdk.android.b.b,com.searchboxsdk.android.a.b) -> b
+    void a(java.util.List) -> a
+    java.util.List c() -> c
+com.searchboxsdk.android.a.d -> com.searchboxsdk.android.a.f:
+    java.util.List d -> d
+    boolean a(com.searchboxsdk.android.b.b,com.searchboxsdk.android.a.b) -> a
+    void b(com.searchboxsdk.android.b.b,com.searchboxsdk.android.a.b) -> b
+    void a(java.util.List) -> a
+    java.util.List c() -> c
+com.searchboxsdk.android.b.a -> com.searchboxsdk.android.b.a:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    java.lang.String g -> g
+    boolean h -> h
+    java.lang.String i -> i
+    java.lang.String a() -> a
+    java.lang.String b() -> b
+    java.lang.String toString() -> toString
+    void a(org.json.JSONObject) -> a
+com.searchboxsdk.android.b.b -> com.searchboxsdk.android.b.b:
+    boolean a -> a
+    java.lang.String b -> b
+    int c -> c
+    java.lang.String d -> d
+    java.util.Set e -> e
+    java.util.Set f -> f
+    boolean a() -> a
+    java.lang.String b() -> b
+    int c() -> c
+    java.lang.String d() -> d
+    java.util.Set e() -> e
+    java.util.Set f() -> f
+    java.lang.String toString() -> toString
+com.searchboxsdk.android.b.b$a -> com.searchboxsdk.android.b.c:
+    com.searchboxsdk.android.b.b$a a -> a
+    com.searchboxsdk.android.b.b$a b -> b
+    com.searchboxsdk.android.b.b$a[] c -> c
+    com.searchboxsdk.android.b.b$a[] values() -> values
+    com.searchboxsdk.android.b.b$a valueOf(java.lang.String) -> valueOf
+com.searchboxsdk.android.b.c -> com.searchboxsdk.android.b.d:
+com.searchboxsdk.android.b.d -> com.searchboxsdk.android.b.e:
+    java.util.Map a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    java.lang.String g -> g
+    java.lang.String h -> h
+    java.lang.String i -> i
+    java.lang.String j -> j
+    java.lang.String k -> k
+    java.lang.String l -> l
+    java.lang.String m -> m
+    java.lang.String n -> n
+    java.lang.String o -> o
+    int p -> p
+    int q -> q
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    void c(java.lang.String) -> c
+    void d(java.lang.String) -> d
+    void e(java.lang.String) -> e
+    void f(java.lang.String) -> f
+    void g(java.lang.String) -> g
+    void h(java.lang.String) -> h
+    void i(java.lang.String) -> i
+    void j(java.lang.String) -> j
+    java.lang.String toString() -> toString
+    void a(android.content.Context) -> a
+    java.util.List a() -> a
+    java.lang.String b() -> b
+com.searchboxsdk.android.b.e -> com.searchboxsdk.android.b.f:
+    java.util.Map a -> a
+    boolean b -> b
+    java.lang.String c -> c
+    boolean a() -> a
+    java.lang.String b() -> b
+    java.lang.String toString() -> toString
+    void a(org.json.JSONObject) -> a
+com.searchboxsdk.android.b.f -> com.searchboxsdk.android.b.g:
+    com.searchboxsdk.android.b.b$a a -> a
+    boolean b -> b
+    double c -> c
+    double d -> d
+    java.lang.String e -> e
+    int f -> f
+    java.lang.String g -> g
+    java.lang.String h -> h
+    int i -> i
+    java.util.Set j -> j
+    java.util.Set k -> k
+    void a(int) -> a
+    java.lang.String toString() -> toString
+    void a(com.searchboxsdk.android.b.b,com.searchboxsdk.android.b.b$a) -> a
+    java.util.List a() -> a
+com.searchboxsdk.android.b.g -> com.searchboxsdk.android.b.h:
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.util.List d -> d
+    java.util.List c() -> c
+    java.lang.String toString() -> toString
+    void a(org.json.JSONObject) -> a
+com.searchboxsdk.android.b.h -> com.searchboxsdk.android.b.i:
+    void a(org.json.JSONObject) -> a
+com.searchboxsdk.android.b.i -> com.searchboxsdk.android.b.j:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.util.Set c -> c
+    java.lang.String a() -> a
+    void a(java.lang.String) -> a
+    java.lang.String b() -> b
+    void b(java.lang.String) -> b
+    java.util.Set c() -> c
+    void a(java.util.Set) -> a
+    java.lang.String toString() -> toString
+com.searchboxsdk.android.c.a -> com.searchboxsdk.android.c.a:
+    android.content.Context a -> a
+    com.searchboxsdk.android.a.a b -> b
+    com.searchboxsdk.android.b.b c -> c
+    com.searchboxsdk.android.a.b d -> d
+    java.lang.String e -> e
+    java.lang.Boolean a(java.lang.Void[]) -> a
+    void a(java.lang.Boolean) -> a
+    java.lang.Object a() -> a
+    boolean a(java.lang.Object) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.searchboxsdk.android.c.a.a -> com.searchboxsdk.android.c.a.a:
+    boolean a(android.content.Context,java.lang.String) -> a
+com.searchboxsdk.android.c.a.a$a -> com.searchboxsdk.android.c.a.b:
+    java.util.List a -> a
+    java.util.List a(android.content.Context) -> a
+com.searchboxsdk.android.c.a.b -> com.searchboxsdk.android.c.a.c:
+    boolean a(android.content.Context,java.lang.String) -> a
+    void a(android.content.ContentResolver,byte[]) -> a
+    void a(android.content.Context) -> a
+    android.os.Bundle a(byte[]) -> a
+    byte[] a(android.os.Bundle) -> a
+com.searchboxsdk.android.c.a.c -> com.searchboxsdk.android.c.a.d:
+    boolean a(android.content.Context,java.lang.String) -> a
+com.searchboxsdk.android.c.a.d -> com.searchboxsdk.android.c.a.e:
+    boolean a(android.content.Context,java.lang.String) -> a
+com.searchboxsdk.android.c.a.e -> com.searchboxsdk.android.c.a.f:
+    boolean a(android.content.Context,java.lang.String) -> a
+com.searchboxsdk.android.c.b -> com.searchboxsdk.android.c.b:
+    com.searchboxsdk.android.b.e b() -> b
+    boolean a(java.lang.Object) -> a
+    boolean a(java.lang.String) -> a
+    java.lang.Object a() -> a
+com.searchboxsdk.android.c.c -> com.searchboxsdk.android.c.c:
+    android.app.Activity f -> f
+    android.webkit.WebView g -> g
+    com.searchboxsdk.android.util.sliding.DrawerLayout h -> h
+    android.os.Handler i -> i
+    com.searchboxsdk.android.b.e b() -> b
+    boolean a(java.lang.Object) -> a
+    void a(java.lang.Boolean) -> a
+    void c() -> c
+    void d() -> d
+    java.lang.Object a() -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    android.webkit.WebView a(com.searchboxsdk.android.c.c) -> a
+    com.searchboxsdk.android.util.sliding.DrawerLayout b(com.searchboxsdk.android.c.c) -> b
+    android.app.Activity c(com.searchboxsdk.android.c.c) -> c
+    android.os.Handler d(com.searchboxsdk.android.c.c) -> d
+com.searchboxsdk.android.c.c$1 -> com.searchboxsdk.android.c.d:
+    com.searchboxsdk.android.c.c a -> a
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+com.searchboxsdk.android.c.c$2 -> com.searchboxsdk.android.c.e:
+    com.searchboxsdk.android.c.c a -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.searchboxsdk.android.c.c$3 -> com.searchboxsdk.android.c.f:
+    android.widget.RelativeLayout a -> a
+    com.searchboxsdk.android.c.c b -> b
+    void onClick(android.view.View) -> onClick
+com.searchboxsdk.android.c.c$4 -> com.searchboxsdk.android.c.g:
+    com.searchboxsdk.android.c.c a -> a
+    void a(int) -> a
+    void a(android.view.View,float) -> a
+    void a(android.view.View) -> a
+    void b(android.view.View) -> b
+com.searchboxsdk.android.c.c$a -> com.searchboxsdk.android.c.h:
+    com.searchboxsdk.android.c.c a -> a
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    void onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String) -> onReceivedError
+com.searchboxsdk.android.c.c$a$1 -> com.searchboxsdk.android.c.i:
+    java.lang.String a -> a
+    com.searchboxsdk.android.c.c$a b -> b
+    void run() -> run
+com.searchboxsdk.android.d.a -> com.searchboxsdk.android.d.a:
+    com.searchboxsdk.android.d.a a -> a
+    com.searchboxsdk.android.d.a[] b -> b
+    com.searchboxsdk.android.d.a[] values() -> values
+    com.searchboxsdk.android.d.a valueOf(java.lang.String) -> valueOf
+    com.searchboxsdk.android.b.h a(java.lang.String,java.lang.Class) -> a
+com.searchboxsdk.android.d.b -> com.searchboxsdk.android.d.b:
+    com.searchboxsdk.android.b.e a(android.content.Context,java.lang.String,com.searchboxsdk.android.b.d,java.util.Map,java.lang.Class) -> a
+    boolean a(android.content.Context,java.lang.String,java.util.Map) -> a
+    void a(android.content.Context,java.lang.String,com.searchboxsdk.android.b.d,java.util.Map,java.lang.StringBuilder) -> a
+    java.util.Map a(android.content.Context,java.util.Map) -> a
+com.searchboxsdk.android.util.a -> com.searchboxsdk.android.util.a:
+    java.lang.String a(android.content.Context) -> a
+com.searchboxsdk.android.util.b -> com.searchboxsdk.android.util.b:
+    boolean a -> a
+    java.lang.String a(byte[],int) -> a
+    byte[] b(byte[],int) -> b
+    byte[] a(byte[],int,int,int) -> a
+com.searchboxsdk.android.util.b$a -> com.searchboxsdk.android.util.c:
+    byte[] a -> a
+    int b -> b
+com.searchboxsdk.android.util.b$b -> com.searchboxsdk.android.util.d:
+    byte[] h -> h
+    byte[] i -> i
+    byte[] j -> j
+    int c -> c
+    int k -> k
+    boolean d -> d
+    boolean e -> e
+    boolean f -> f
+    byte[] l -> l
+    boolean g -> g
+    boolean a(byte[],int,int,boolean) -> a
+com.searchboxsdk.android.util.c -> com.searchboxsdk.android.util.e:
+    java.util.Map a -> a
+    boolean b -> b
+    android.graphics.Bitmap a(android.content.Context,java.lang.String,boolean) -> a
+    android.graphics.Bitmap a(android.content.Context,java.lang.String) -> a
+    void a(android.content.Context) -> a
+    boolean a(java.lang.String,java.lang.String,java.lang.String) -> a
+    void b(android.content.Context,java.lang.String) -> b
+com.searchboxsdk.android.util.d -> com.searchboxsdk.android.util.f:
+    java.lang.String a -> a
+com.searchboxsdk.android.util.e -> com.searchboxsdk.android.util.g:
+    byte[] a -> a
+    java.lang.String a(java.lang.String) -> a
+com.searchboxsdk.android.util.f -> com.searchboxsdk.android.util.h:
+    byte[] a -> a
+    byte[] b -> b
+    byte[] c -> c
+    byte[] d -> d
+    byte[] e -> e
+    byte[] f -> f
+    byte[] g -> g
+    byte[] h -> h
+    byte[] i -> i
+    byte[] j -> j
+    byte[] k -> k
+    byte[] l -> l
+    byte[] m -> m
+    byte[] n -> n
+    byte[] o -> o
+    byte[] p -> p
+    byte[] q -> q
+    byte[] r -> r
+    byte[] s -> s
+    byte[] t -> t
+    byte[] u -> u
+    byte[] v -> v
+    int[] w -> w
+    int[] x -> x
+    void a(android.content.Context,android.content.Intent) -> a
+    java.lang.String a(byte[]) -> a
+    android.content.Intent a(java.lang.String) -> a
+    void a(android.content.Intent,java.lang.String,java.lang.String) -> a
+    void b(android.content.Intent,java.lang.String,java.lang.String) -> b
+    java.lang.String b(byte[]) -> b
+    java.lang.String a() -> a
+    int a(int,int,int,int,int,int,int) -> a
+    int b(int,int,int,int,int,int,int) -> b
+    int c(int,int,int,int,int,int,int) -> c
+    int d(int,int,int,int,int,int,int) -> d
+com.searchboxsdk.android.util.g -> com.searchboxsdk.android.util.i:
+    void a(int,java.lang.String) -> a
+    void a(int,java.lang.String,java.lang.Throwable) -> a
+com.searchboxsdk.android.util.h -> com.searchboxsdk.android.util.j:
+    boolean a(android.content.Context,java.lang.String,java.util.Map,java.lang.StringBuilder) -> a
+    java.net.HttpURLConnection a(android.content.Context,java.lang.String,byte[],java.util.Map) -> a
+com.searchboxsdk.android.util.i -> com.searchboxsdk.android.util.k:
+    boolean a -> a
+com.searchboxsdk.android.util.j -> com.searchboxsdk.android.util.l:
+    java.lang.String a() -> a
+    boolean a(android.content.Context) -> a
+    void a(java.util.List,java.lang.String,java.lang.String,boolean) -> a
+    void a(java.util.List,java.lang.String,java.util.Set,boolean) -> a
+    java.lang.String b(android.content.Context) -> b
+    java.lang.String d(android.content.Context) -> d
+    java.lang.String c(android.content.Context) -> c
+    int a(android.content.Context,int) -> a
+com.searchboxsdk.android.util.sliding.DrawerLayout -> com.searchboxsdk.android.util.sliding.DrawerLayout:
+    int[] a -> a
+    int b -> b
+    int c -> c
+    float d -> d
+    android.graphics.Paint e -> e
+    com.searchboxsdk.android.util.sliding.c f -> f
+    com.searchboxsdk.android.util.sliding.c g -> g
+    com.searchboxsdk.android.util.sliding.DrawerLayout$d h -> h
+    com.searchboxsdk.android.util.sliding.DrawerLayout$d i -> i
+    int j -> j
+    boolean k -> k
+    boolean l -> l
+    int m -> m
+    int n -> n
+    boolean o -> o
+    boolean p -> p
+    com.searchboxsdk.android.util.sliding.DrawerLayout$b q -> q
+    float r -> r
+    float s -> s
+    android.graphics.drawable.Drawable t -> t
+    android.graphics.drawable.Drawable u -> u
+    void setScrimColor(int) -> setScrimColor
+    void setDrawerListener(com.searchboxsdk.android.util.sliding.DrawerLayout$b) -> setDrawerListener
+    void setDrawerLockMode(int) -> setDrawerLockMode
+    void a(int,int) -> a
+    int a(android.view.View) -> a
+    void a(int,int,android.view.View) -> a
+    void b(android.view.View) -> b
+    void c(android.view.View) -> c
+    void a(android.view.View,float) -> a
+    void b(android.view.View,float) -> b
+    float d(android.view.View) -> d
+    int e(android.view.View) -> e
+    boolean a(android.view.View,int) -> a
+    android.view.View a() -> a
+    android.view.View a(int) -> a
+    java.lang.String b(int) -> b
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onMeasure(int,int) -> onMeasure
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void requestLayout() -> requestLayout
+    void computeScroll() -> computeScroll
+    boolean k(android.view.View) -> k
+    boolean drawChild(android.graphics.Canvas,android.view.View,long) -> drawChild
+    boolean f(android.view.View) -> f
+    boolean g(android.view.View) -> g
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void requestDisallowInterceptTouchEvent(boolean) -> requestDisallowInterceptTouchEvent
+    void b() -> b
+    void a(boolean) -> a
+    void h(android.view.View) -> h
+    void i(android.view.View) -> i
+    boolean j(android.view.View) -> j
+    boolean e() -> e
+    android.view.ViewGroup$LayoutParams generateDefaultLayoutParams() -> generateDefaultLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
+    boolean checkLayoutParams(android.view.ViewGroup$LayoutParams) -> checkLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet) -> generateLayoutParams
+    boolean f() -> f
+    android.view.View g() -> g
+    void c() -> c
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onKeyUp(int,android.view.KeyEvent) -> onKeyUp
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    int[] d() -> d
+com.searchboxsdk.android.util.sliding.DrawerLayout$SavedState -> com.searchboxsdk.android.util.sliding.DrawerLayout$SavedState:
+    int a -> a
+    int b -> b
+    int c -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+com.searchboxsdk.android.util.sliding.DrawerLayout$SavedState$1 -> com.searchboxsdk.android.util.sliding.a:
+    com.searchboxsdk.android.util.sliding.DrawerLayout$SavedState a(android.os.Parcel) -> a
+    com.searchboxsdk.android.util.sliding.DrawerLayout$SavedState[] a(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+com.searchboxsdk.android.util.sliding.DrawerLayout$a -> com.searchboxsdk.android.util.sliding.b:
+    android.graphics.Rect c -> c
+    com.searchboxsdk.android.util.sliding.DrawerLayout a -> a
+    void a(android.view.View,com.searchboxsdk.android.util.sliding.a.a) -> a
+    boolean a(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    boolean a(android.view.View) -> a
+    void a(com.searchboxsdk.android.util.sliding.a.a,com.searchboxsdk.android.util.sliding.a.a) -> a
+com.searchboxsdk.android.util.sliding.DrawerLayout$b -> com.searchboxsdk.android.util.sliding.c:
+    void a(android.view.View,float) -> a
+    void a(android.view.View) -> a
+    void b(android.view.View) -> b
+    void a(int) -> a
+com.searchboxsdk.android.util.sliding.DrawerLayout$c -> com.searchboxsdk.android.util.sliding.d:
+    int a -> a
+    float b -> b
+    boolean c -> c
+    boolean d -> d
+com.searchboxsdk.android.util.sliding.DrawerLayout$d -> com.searchboxsdk.android.util.sliding.e:
+    int b -> b
+    com.searchboxsdk.android.util.sliding.c c -> c
+    java.lang.Runnable d -> d
+    com.searchboxsdk.android.util.sliding.DrawerLayout a -> a
+    void a(com.searchboxsdk.android.util.sliding.c) -> a
+    void a() -> a
+    boolean a(android.view.View,int) -> a
+    void a(int) -> a
+    void a(android.view.View,int,int,int,int) -> a
+    void b(android.view.View,int) -> b
+    void b() -> b
+    void a(android.view.View,float,float) -> a
+    void a(int,int) -> a
+    void c() -> c
+    boolean b(int) -> b
+    void b(int,int) -> b
+    int a(android.view.View) -> a
+    int a(android.view.View,int,int) -> a
+    int b(android.view.View,int,int) -> b
+    void a(com.searchboxsdk.android.util.sliding.DrawerLayout$d) -> a
+com.searchboxsdk.android.util.sliding.DrawerLayout$d$1 -> com.searchboxsdk.android.util.sliding.f:
+    com.searchboxsdk.android.util.sliding.DrawerLayout$d a -> a
+    void run() -> run
+com.searchboxsdk.android.util.sliding.a -> com.searchboxsdk.android.util.sliding.g:
+    java.lang.Object a -> a
+    com.searchboxsdk.android.util.sliding.a$a b -> b
+    com.searchboxsdk.android.util.sliding.a a(android.content.Context,android.view.animation.Interpolator) -> a
+    boolean a() -> a
+    int b() -> b
+    int c() -> c
+    int d() -> d
+    int e() -> e
+    boolean f() -> f
+    void a(int,int,int,int,int) -> a
+    void g() -> g
+com.searchboxsdk.android.util.sliding.a$a -> com.searchboxsdk.android.util.sliding.h:
+    java.lang.Object a(android.content.Context,android.view.animation.Interpolator) -> a
+    boolean a(java.lang.Object) -> a
+    int b(java.lang.Object) -> b
+    int c(java.lang.Object) -> c
+    boolean d(java.lang.Object) -> d
+    void a(java.lang.Object,int,int,int,int,int) -> a
+    void e(java.lang.Object) -> e
+    int f(java.lang.Object) -> f
+    int g(java.lang.Object) -> g
+com.searchboxsdk.android.util.sliding.a$b -> com.searchboxsdk.android.util.sliding.i:
+    java.lang.Object a(android.content.Context,android.view.animation.Interpolator) -> a
+    boolean a(java.lang.Object) -> a
+    int b(java.lang.Object) -> b
+    int c(java.lang.Object) -> c
+    boolean d(java.lang.Object) -> d
+    void a(java.lang.Object,int,int,int,int,int) -> a
+    void e(java.lang.Object) -> e
+    int f(java.lang.Object) -> f
+    int g(java.lang.Object) -> g
+com.searchboxsdk.android.util.sliding.a$c -> com.searchboxsdk.android.util.sliding.j:
+    java.lang.Object a(android.content.Context,android.view.animation.Interpolator) -> a
+    boolean a(java.lang.Object) -> a
+    int b(java.lang.Object) -> b
+    int c(java.lang.Object) -> c
+    boolean d(java.lang.Object) -> d
+    void a(java.lang.Object,int,int,int,int,int) -> a
+    void e(java.lang.Object) -> e
+    int f(java.lang.Object) -> f
+    int g(java.lang.Object) -> g
+com.searchboxsdk.android.util.sliding.a$d -> com.searchboxsdk.android.util.sliding.k:
+com.searchboxsdk.android.util.sliding.a.a -> com.searchboxsdk.android.util.sliding.a.a:
+    com.searchboxsdk.android.util.sliding.a.a$b a -> a
+    java.lang.Object b -> b
+    com.searchboxsdk.android.util.sliding.a.a a(java.lang.Object) -> a
+    java.lang.Object a() -> a
+    com.searchboxsdk.android.util.sliding.a.a a(com.searchboxsdk.android.util.sliding.a.a) -> a
+    void a(android.view.View) -> a
+    void b(android.view.View) -> b
+    int b() -> b
+    void a(int) -> a
+    void c(android.view.View) -> c
+    void a(android.graphics.Rect) -> a
+    void b(android.graphics.Rect) -> b
+    void c(android.graphics.Rect) -> c
+    void d(android.graphics.Rect) -> d
+    boolean c() -> c
+    boolean d() -> d
+    boolean e() -> e
+    void a(boolean) -> a
+    boolean f() -> f
+    void b(boolean) -> b
+    boolean g() -> g
+    void c(boolean) -> c
+    boolean h() -> h
+    void d(boolean) -> d
+    boolean i() -> i
+    void e(boolean) -> e
+    boolean j() -> j
+    void f(boolean) -> f
+    boolean k() -> k
+    void g(boolean) -> g
+    boolean l() -> l
+    void h(boolean) -> h
+    boolean m() -> m
+    boolean n() -> n
+    java.lang.CharSequence o() -> o
+    void a(java.lang.CharSequence) -> a
+    java.lang.CharSequence p() -> p
+    void b(java.lang.CharSequence) -> b
+    java.lang.CharSequence q() -> q
+    java.lang.CharSequence r() -> r
+    void c(java.lang.CharSequence) -> c
+    void s() -> s
+    int hashCode() -> hashCode
+    boolean equals(java.lang.Object) -> equals
+    java.lang.String toString() -> toString
+    java.lang.String b(int) -> b
+com.searchboxsdk.android.util.sliding.a.a$a -> com.searchboxsdk.android.util.sliding.a.b:
+    java.lang.Object a(java.lang.Object) -> a
+    void a(java.lang.Object,int) -> a
+    void a(java.lang.Object,android.view.View) -> a
+    int b(java.lang.Object) -> b
+    void a(java.lang.Object,android.graphics.Rect) -> a
+    void b(java.lang.Object,android.graphics.Rect) -> b
+    java.lang.CharSequence c(java.lang.Object) -> c
+    java.lang.CharSequence d(java.lang.Object) -> d
+    java.lang.CharSequence e(java.lang.Object) -> e
+    java.lang.CharSequence f(java.lang.Object) -> f
+    boolean g(java.lang.Object) -> g
+    boolean h(java.lang.Object) -> h
+    boolean i(java.lang.Object) -> i
+    boolean j(java.lang.Object) -> j
+    boolean k(java.lang.Object) -> k
+    boolean l(java.lang.Object) -> l
+    boolean m(java.lang.Object) -> m
+    boolean n(java.lang.Object) -> n
+    boolean o(java.lang.Object) -> o
+    boolean p(java.lang.Object) -> p
+    void c(java.lang.Object,android.graphics.Rect) -> c
+    void d(java.lang.Object,android.graphics.Rect) -> d
+    void a(java.lang.Object,java.lang.CharSequence) -> a
+    void a(java.lang.Object,boolean) -> a
+    void b(java.lang.Object,java.lang.CharSequence) -> b
+    void b(java.lang.Object,boolean) -> b
+    void c(java.lang.Object,boolean) -> c
+    void d(java.lang.Object,boolean) -> d
+    void e(java.lang.Object,boolean) -> e
+    void c(java.lang.Object,java.lang.CharSequence) -> c
+    void b(java.lang.Object,android.view.View) -> b
+    void f(java.lang.Object,boolean) -> f
+    void c(java.lang.Object,android.view.View) -> c
+    void q(java.lang.Object) -> q
+com.searchboxsdk.android.util.sliding.a.a$b -> com.searchboxsdk.android.util.sliding.a.c:
+    java.lang.Object a(java.lang.Object) -> a
+    void c(java.lang.Object,android.view.View) -> c
+    void a(java.lang.Object,android.view.View) -> a
+    int b(java.lang.Object) -> b
+    void a(java.lang.Object,int) -> a
+    void b(java.lang.Object,android.view.View) -> b
+    void a(java.lang.Object,android.graphics.Rect) -> a
+    void c(java.lang.Object,android.graphics.Rect) -> c
+    void b(java.lang.Object,android.graphics.Rect) -> b
+    void d(java.lang.Object,android.graphics.Rect) -> d
+    boolean g(java.lang.Object) -> g
+    boolean h(java.lang.Object) -> h
+    boolean k(java.lang.Object) -> k
+    void c(java.lang.Object,boolean) -> c
+    boolean l(java.lang.Object) -> l
+    void d(java.lang.Object,boolean) -> d
+    boolean r(java.lang.Object) -> r
+    void g(java.lang.Object,boolean) -> g
+    boolean s(java.lang.Object) -> s
+    void h(java.lang.Object,boolean) -> h
+    boolean p(java.lang.Object) -> p
+    void f(java.lang.Object,boolean) -> f
+    boolean i(java.lang.Object) -> i
+    void a(java.lang.Object,boolean) -> a
+    boolean m(java.lang.Object) -> m
+    void e(java.lang.Object,boolean) -> e
+    boolean j(java.lang.Object) -> j
+    void b(java.lang.Object,boolean) -> b
+    boolean n(java.lang.Object) -> n
+    boolean o(java.lang.Object) -> o
+    java.lang.CharSequence e(java.lang.Object) -> e
+    void c(java.lang.Object,java.lang.CharSequence) -> c
+    java.lang.CharSequence c(java.lang.Object) -> c
+    void a(java.lang.Object,java.lang.CharSequence) -> a
+    java.lang.CharSequence f(java.lang.Object) -> f
+    java.lang.CharSequence d(java.lang.Object) -> d
+    void b(java.lang.Object,java.lang.CharSequence) -> b
+    void q(java.lang.Object) -> q
+com.searchboxsdk.android.util.sliding.a.a$c -> com.searchboxsdk.android.util.sliding.a.d:
+    boolean r(java.lang.Object) -> r
+    void g(java.lang.Object,boolean) -> g
+    boolean s(java.lang.Object) -> s
+    void h(java.lang.Object,boolean) -> h
+com.searchboxsdk.android.util.sliding.a.a$d -> com.searchboxsdk.android.util.sliding.a.e:
+com.searchboxsdk.android.util.sliding.a.a$e -> com.searchboxsdk.android.util.sliding.a.f:
+    java.lang.Object a(java.lang.Object) -> a
+    void a(java.lang.Object,int) -> a
+    void a(java.lang.Object,android.view.View) -> a
+    int b(java.lang.Object) -> b
+    void a(java.lang.Object,android.graphics.Rect) -> a
+    void b(java.lang.Object,android.graphics.Rect) -> b
+    java.lang.CharSequence c(java.lang.Object) -> c
+    java.lang.CharSequence d(java.lang.Object) -> d
+    java.lang.CharSequence e(java.lang.Object) -> e
+    java.lang.CharSequence f(java.lang.Object) -> f
+    boolean g(java.lang.Object) -> g
+    boolean h(java.lang.Object) -> h
+    boolean i(java.lang.Object) -> i
+    boolean j(java.lang.Object) -> j
+    boolean k(java.lang.Object) -> k
+    boolean l(java.lang.Object) -> l
+    boolean r(java.lang.Object) -> r
+    boolean s(java.lang.Object) -> s
+    boolean m(java.lang.Object) -> m
+    boolean n(java.lang.Object) -> n
+    boolean o(java.lang.Object) -> o
+    boolean p(java.lang.Object) -> p
+    void c(java.lang.Object,android.graphics.Rect) -> c
+    void d(java.lang.Object,android.graphics.Rect) -> d
+    void a(java.lang.Object,java.lang.CharSequence) -> a
+    void a(java.lang.Object,boolean) -> a
+    void b(java.lang.Object,java.lang.CharSequence) -> b
+    void b(java.lang.Object,boolean) -> b
+    void c(java.lang.Object,boolean) -> c
+    void d(java.lang.Object,boolean) -> d
+    void g(java.lang.Object,boolean) -> g
+    void h(java.lang.Object,boolean) -> h
+    void e(java.lang.Object,boolean) -> e
+    void c(java.lang.Object,java.lang.CharSequence) -> c
+    void b(java.lang.Object,android.view.View) -> b
+    void f(java.lang.Object,boolean) -> f
+    void c(java.lang.Object,android.view.View) -> c
+    void q(java.lang.Object) -> q
+com.searchboxsdk.android.util.sliding.a.b -> com.searchboxsdk.android.util.sliding.a.g:
+    java.lang.Object a(java.lang.Object) -> a
+    void a(java.lang.Object,int) -> a
+    void a(java.lang.Object,android.view.View) -> a
+    int b(java.lang.Object) -> b
+    void a(java.lang.Object,android.graphics.Rect) -> a
+    void b(java.lang.Object,android.graphics.Rect) -> b
+    java.lang.CharSequence c(java.lang.Object) -> c
+    java.lang.CharSequence d(java.lang.Object) -> d
+    java.lang.CharSequence e(java.lang.Object) -> e
+    java.lang.CharSequence f(java.lang.Object) -> f
+    boolean g(java.lang.Object) -> g
+    boolean h(java.lang.Object) -> h
+    boolean i(java.lang.Object) -> i
+    boolean j(java.lang.Object) -> j
+    boolean k(java.lang.Object) -> k
+    boolean l(java.lang.Object) -> l
+    boolean m(java.lang.Object) -> m
+    boolean n(java.lang.Object) -> n
+    boolean o(java.lang.Object) -> o
+    boolean p(java.lang.Object) -> p
+    void c(java.lang.Object,android.graphics.Rect) -> c
+    void d(java.lang.Object,android.graphics.Rect) -> d
+    void a(java.lang.Object,java.lang.CharSequence) -> a
+    void a(java.lang.Object,boolean) -> a
+    void b(java.lang.Object,java.lang.CharSequence) -> b
+    void b(java.lang.Object,boolean) -> b
+    void c(java.lang.Object,boolean) -> c
+    void d(java.lang.Object,boolean) -> d
+    void e(java.lang.Object,boolean) -> e
+    void c(java.lang.Object,java.lang.CharSequence) -> c
+    void b(java.lang.Object,android.view.View) -> b
+    void f(java.lang.Object,boolean) -> f
+    void c(java.lang.Object,android.view.View) -> c
+    void q(java.lang.Object) -> q
+com.searchboxsdk.android.util.sliding.a.c -> com.searchboxsdk.android.util.sliding.a.h:
+    boolean a(java.lang.Object) -> a
+    void a(java.lang.Object,boolean) -> a
+    boolean b(java.lang.Object) -> b
+    void b(java.lang.Object,boolean) -> b
+com.searchboxsdk.android.util.sliding.a.d -> com.searchboxsdk.android.util.sliding.a.i:
+    com.searchboxsdk.android.util.sliding.a.d$a a -> a
+    java.lang.Object b -> b
+    java.lang.Object a() -> a
+    com.searchboxsdk.android.util.sliding.a.a a(int) -> a
+    boolean a(int,int,android.os.Bundle) -> a
+    java.util.List a(java.lang.String,int) -> a
+com.searchboxsdk.android.util.sliding.a.d$a -> com.searchboxsdk.android.util.sliding.a.j:
+    java.lang.Object a(com.searchboxsdk.android.util.sliding.a.d) -> a
+com.searchboxsdk.android.util.sliding.a.d$b -> com.searchboxsdk.android.util.sliding.a.k:
+    java.lang.Object a(com.searchboxsdk.android.util.sliding.a.d) -> a
+com.searchboxsdk.android.util.sliding.a.d$b$1 -> com.searchboxsdk.android.util.sliding.a.l:
+    com.searchboxsdk.android.util.sliding.a.d a -> a
+    com.searchboxsdk.android.util.sliding.a.d$b b -> b
+    boolean a(int,int,android.os.Bundle) -> a
+    java.util.List a(java.lang.String,int) -> a
+    java.lang.Object a(int) -> a
+com.searchboxsdk.android.util.sliding.a.d$c -> com.searchboxsdk.android.util.sliding.a.m:
+    java.lang.Object a(com.searchboxsdk.android.util.sliding.a.d) -> a
+com.searchboxsdk.android.util.sliding.a.e -> com.searchboxsdk.android.util.sliding.a.n:
+    java.lang.Object a(com.searchboxsdk.android.util.sliding.a.e$a) -> a
+com.searchboxsdk.android.util.sliding.a.e$1 -> com.searchboxsdk.android.util.sliding.a.o:
+    com.searchboxsdk.android.util.sliding.a.e$a a -> a
+    android.view.accessibility.AccessibilityNodeInfo createAccessibilityNodeInfo(int) -> createAccessibilityNodeInfo
+    java.util.List findAccessibilityNodeInfosByText(java.lang.String,int) -> findAccessibilityNodeInfosByText
+    boolean performAction(int,int,android.os.Bundle) -> performAction
+com.searchboxsdk.android.util.sliding.a.e$a -> com.searchboxsdk.android.util.sliding.a.p:
+    java.lang.Object a(int) -> a
+    boolean a(int,int,android.os.Bundle) -> a
+    java.util.List a(java.lang.String,int) -> a
+com.searchboxsdk.android.util.sliding.b -> com.searchboxsdk.android.util.sliding.l:
+    java.lang.Object a(android.content.Context,android.view.animation.Interpolator) -> a
+    boolean a(java.lang.Object) -> a
+    int b(java.lang.Object) -> b
+    int c(java.lang.Object) -> c
+    boolean d(java.lang.Object) -> d
+    void a(java.lang.Object,int,int,int,int,int) -> a
+    void e(java.lang.Object) -> e
+    int f(java.lang.Object) -> f
+    int g(java.lang.Object) -> g
+com.searchboxsdk.android.util.sliding.b.a -> com.searchboxsdk.android.util.sliding.b.a:
+    com.searchboxsdk.android.util.sliding.b.a$b a -> a
+    java.lang.Object c -> c
+    java.lang.Object b -> b
+    java.lang.Object a() -> a
+    void a(android.view.View,int) -> a
+    void a(android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    boolean b(android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void c(android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    void d(android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+    void a(android.view.View,com.searchboxsdk.android.util.sliding.a.a) -> a
+    boolean a(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    com.searchboxsdk.android.util.sliding.a.d b(android.view.View) -> b
+    boolean a(android.view.View,int,android.os.Bundle) -> a
+com.searchboxsdk.android.util.sliding.b.a$a -> com.searchboxsdk.android.util.sliding.b.b:
+    java.lang.Object a() -> a
+    java.lang.Object a(com.searchboxsdk.android.util.sliding.b.a) -> a
+    boolean a(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void b(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void a(java.lang.Object,android.view.View,com.searchboxsdk.android.util.sliding.a.a) -> a
+    void c(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean a(java.lang.Object,android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void a(java.lang.Object,android.view.View,int) -> a
+    void d(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+com.searchboxsdk.android.util.sliding.b.a$a$1 -> com.searchboxsdk.android.util.sliding.b.c:
+    com.searchboxsdk.android.util.sliding.b.a a -> a
+    com.searchboxsdk.android.util.sliding.b.a$a b -> b
+    boolean a(android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void b(android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void a(android.view.View,java.lang.Object) -> a
+    void c(android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean a(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void a(android.view.View,int) -> a
+    void d(android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+com.searchboxsdk.android.util.sliding.b.a$b -> com.searchboxsdk.android.util.sliding.b.d:
+    java.lang.Object a() -> a
+    java.lang.Object a(com.searchboxsdk.android.util.sliding.b.a) -> a
+    boolean a(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void b(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void a(java.lang.Object,android.view.View,com.searchboxsdk.android.util.sliding.a.a) -> a
+    void c(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean a(java.lang.Object,android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void a(java.lang.Object,android.view.View,int) -> a
+    void d(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+    com.searchboxsdk.android.util.sliding.a.d a(java.lang.Object,android.view.View) -> a
+    boolean a(java.lang.Object,android.view.View,int,android.os.Bundle) -> a
+com.searchboxsdk.android.util.sliding.b.a$c -> com.searchboxsdk.android.util.sliding.b.e:
+    java.lang.Object a(com.searchboxsdk.android.util.sliding.b.a) -> a
+    com.searchboxsdk.android.util.sliding.a.d a(java.lang.Object,android.view.View) -> a
+    boolean a(java.lang.Object,android.view.View,int,android.os.Bundle) -> a
+com.searchboxsdk.android.util.sliding.b.a$c$1 -> com.searchboxsdk.android.util.sliding.b.f:
+    com.searchboxsdk.android.util.sliding.b.a a -> a
+    com.searchboxsdk.android.util.sliding.b.a$c b -> b
+    boolean a(android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void b(android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void a(android.view.View,java.lang.Object) -> a
+    void c(android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean a(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void a(android.view.View,int) -> a
+    void d(android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+    java.lang.Object a(android.view.View) -> a
+    boolean a(android.view.View,int,android.os.Bundle) -> a
+com.searchboxsdk.android.util.sliding.b.a$d -> com.searchboxsdk.android.util.sliding.b.g:
+    java.lang.Object a() -> a
+    java.lang.Object a(com.searchboxsdk.android.util.sliding.b.a) -> a
+    boolean a(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void b(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void a(java.lang.Object,android.view.View,com.searchboxsdk.android.util.sliding.a.a) -> a
+    void c(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean a(java.lang.Object,android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void a(java.lang.Object,android.view.View,int) -> a
+    void d(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+    com.searchboxsdk.android.util.sliding.a.d a(java.lang.Object,android.view.View) -> a
+    boolean a(java.lang.Object,android.view.View,int,android.os.Bundle) -> a
+com.searchboxsdk.android.util.sliding.b.b -> com.searchboxsdk.android.util.sliding.b.h:
+    java.lang.Object a() -> a
+    java.lang.Object a(com.searchboxsdk.android.util.sliding.b.b$a) -> a
+    boolean a(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void b(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void a(java.lang.Object,android.view.View,java.lang.Object) -> a
+    void c(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean a(java.lang.Object,android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void a(java.lang.Object,android.view.View,int) -> a
+    void d(java.lang.Object,android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+com.searchboxsdk.android.util.sliding.b.b$1 -> com.searchboxsdk.android.util.sliding.b.i:
+    com.searchboxsdk.android.util.sliding.b.b$a a -> a
+    boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> dispatchPopulateAccessibilityEvent
+    void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> onInitializeAccessibilityEvent
+    void onInitializeAccessibilityNodeInfo(android.view.View,android.view.accessibility.AccessibilityNodeInfo) -> onInitializeAccessibilityNodeInfo
+    void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> onPopulateAccessibilityEvent
+    boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> onRequestSendAccessibilityEvent
+    void sendAccessibilityEvent(android.view.View,int) -> sendAccessibilityEvent
+    void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent) -> sendAccessibilityEventUnchecked
+com.searchboxsdk.android.util.sliding.b.b$a -> com.searchboxsdk.android.util.sliding.b.j:
+    boolean a(android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void b(android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void a(android.view.View,java.lang.Object) -> a
+    void c(android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean a(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void a(android.view.View,int) -> a
+    void d(android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+com.searchboxsdk.android.util.sliding.b.c -> com.searchboxsdk.android.util.sliding.b.k:
+    java.lang.Object a(com.searchboxsdk.android.util.sliding.b.c$a) -> a
+    java.lang.Object a(java.lang.Object,android.view.View) -> a
+    boolean a(java.lang.Object,android.view.View,int,android.os.Bundle) -> a
+com.searchboxsdk.android.util.sliding.b.c$1 -> com.searchboxsdk.android.util.sliding.b.l:
+    com.searchboxsdk.android.util.sliding.b.c$a a -> a
+    boolean dispatchPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> dispatchPopulateAccessibilityEvent
+    void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> onInitializeAccessibilityEvent
+    void onInitializeAccessibilityNodeInfo(android.view.View,android.view.accessibility.AccessibilityNodeInfo) -> onInitializeAccessibilityNodeInfo
+    void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent) -> onPopulateAccessibilityEvent
+    boolean onRequestSendAccessibilityEvent(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> onRequestSendAccessibilityEvent
+    void sendAccessibilityEvent(android.view.View,int) -> sendAccessibilityEvent
+    void sendAccessibilityEventUnchecked(android.view.View,android.view.accessibility.AccessibilityEvent) -> sendAccessibilityEventUnchecked
+    android.view.accessibility.AccessibilityNodeProvider getAccessibilityNodeProvider(android.view.View) -> getAccessibilityNodeProvider
+    boolean performAccessibilityAction(android.view.View,int,android.os.Bundle) -> performAccessibilityAction
+com.searchboxsdk.android.util.sliding.b.c$a -> com.searchboxsdk.android.util.sliding.b.m:
+    boolean a(android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void b(android.view.View,android.view.accessibility.AccessibilityEvent) -> b
+    void a(android.view.View,java.lang.Object) -> a
+    void c(android.view.View,android.view.accessibility.AccessibilityEvent) -> c
+    boolean a(android.view.ViewGroup,android.view.View,android.view.accessibility.AccessibilityEvent) -> a
+    void a(android.view.View,int) -> a
+    void d(android.view.View,android.view.accessibility.AccessibilityEvent) -> d
+    java.lang.Object a(android.view.View) -> a
+    boolean a(android.view.View,int,android.os.Bundle) -> a
+com.searchboxsdk.android.util.sliding.b.d -> com.searchboxsdk.android.util.sliding.b.n:
+    com.searchboxsdk.android.util.sliding.b.d$a a -> a
+    int a(int,int) -> a
+com.searchboxsdk.android.util.sliding.b.d$a -> com.searchboxsdk.android.util.sliding.b.o:
+    int a(int,int) -> a
+com.searchboxsdk.android.util.sliding.b.d$b -> com.searchboxsdk.android.util.sliding.b.p:
+    int a(int,int) -> a
+com.searchboxsdk.android.util.sliding.b.d$c -> com.searchboxsdk.android.util.sliding.b.q:
+    int a(int,int) -> a
+com.searchboxsdk.android.util.sliding.b.e -> com.searchboxsdk.android.util.sliding.b.r:
+    int a(int,int) -> a
+com.searchboxsdk.android.util.sliding.b.f -> com.searchboxsdk.android.util.sliding.b.s:
+    com.searchboxsdk.android.util.sliding.b.f$d a -> a
+    void a(android.view.KeyEvent) -> a
+com.searchboxsdk.android.util.sliding.b.f$a -> com.searchboxsdk.android.util.sliding.b.t:
+    void a(android.view.KeyEvent) -> a
+com.searchboxsdk.android.util.sliding.b.f$b -> com.searchboxsdk.android.util.sliding.b.u:
+    void a(android.view.KeyEvent) -> a
+com.searchboxsdk.android.util.sliding.b.f$c -> com.searchboxsdk.android.util.sliding.b.v:
+com.searchboxsdk.android.util.sliding.b.f$d -> com.searchboxsdk.android.util.sliding.b.w:
+    void a(android.view.KeyEvent) -> a
+com.searchboxsdk.android.util.sliding.b.g -> com.searchboxsdk.android.util.sliding.b.x:
+    void a(android.view.KeyEvent) -> a
+com.searchboxsdk.android.util.sliding.b.h -> com.searchboxsdk.android.util.sliding.b.y:
+    com.searchboxsdk.android.util.sliding.b.h$c a -> a
+    int a(android.view.MotionEvent) -> a
+    int b(android.view.MotionEvent) -> b
+    int a(android.view.MotionEvent,int) -> a
+    int b(android.view.MotionEvent,int) -> b
+    float c(android.view.MotionEvent,int) -> c
+    float d(android.view.MotionEvent,int) -> d
+    int c(android.view.MotionEvent) -> c
+com.searchboxsdk.android.util.sliding.b.h$a -> com.searchboxsdk.android.util.sliding.b.z:
+    int a(android.view.MotionEvent,int) -> a
+    int b(android.view.MotionEvent,int) -> b
+    float c(android.view.MotionEvent,int) -> c
+    float d(android.view.MotionEvent,int) -> d
+    int a(android.view.MotionEvent) -> a
+com.searchboxsdk.android.util.sliding.b.h$b -> com.searchboxsdk.android.util.sliding.b.aa:
+    int a(android.view.MotionEvent,int) -> a
+    int b(android.view.MotionEvent,int) -> b
+    float c(android.view.MotionEvent,int) -> c
+    float d(android.view.MotionEvent,int) -> d
+    int a(android.view.MotionEvent) -> a
+com.searchboxsdk.android.util.sliding.b.h$c -> com.searchboxsdk.android.util.sliding.b.ab:
+    int a(android.view.MotionEvent,int) -> a
+    int b(android.view.MotionEvent,int) -> b
+    float c(android.view.MotionEvent,int) -> c
+    float d(android.view.MotionEvent,int) -> d
+    int a(android.view.MotionEvent) -> a
+com.searchboxsdk.android.util.sliding.b.i -> com.searchboxsdk.android.util.sliding.b.ac:
+    int a(android.view.MotionEvent,int) -> a
+    int b(android.view.MotionEvent,int) -> b
+    float c(android.view.MotionEvent,int) -> c
+    float d(android.view.MotionEvent,int) -> d
+    int a(android.view.MotionEvent) -> a
+com.searchboxsdk.android.util.sliding.b.j -> com.searchboxsdk.android.util.sliding.b.ad:
+    com.searchboxsdk.android.util.sliding.b.j$c a -> a
+    float a(android.view.VelocityTracker,int) -> a
+    float b(android.view.VelocityTracker,int) -> b
+com.searchboxsdk.android.util.sliding.b.j$a -> com.searchboxsdk.android.util.sliding.b.ae:
+    float a(android.view.VelocityTracker,int) -> a
+    float b(android.view.VelocityTracker,int) -> b
+com.searchboxsdk.android.util.sliding.b.j$b -> com.searchboxsdk.android.util.sliding.b.af:
+    float a(android.view.VelocityTracker,int) -> a
+    float b(android.view.VelocityTracker,int) -> b
+com.searchboxsdk.android.util.sliding.b.j$c -> com.searchboxsdk.android.util.sliding.b.ag:
+    float a(android.view.VelocityTracker,int) -> a
+    float b(android.view.VelocityTracker,int) -> b
+com.searchboxsdk.android.util.sliding.b.k -> com.searchboxsdk.android.util.sliding.b.ah:
+    float a(android.view.VelocityTracker,int) -> a
+    float b(android.view.VelocityTracker,int) -> b
+com.searchboxsdk.android.util.sliding.b.l -> com.searchboxsdk.android.util.sliding.b.ai:
+    com.searchboxsdk.android.util.sliding.b.l$g a -> a
+    void a(android.view.View,com.searchboxsdk.android.util.sliding.b.a) -> a
+    void a(android.view.View) -> a
+    int b(android.view.View) -> b
+    android.view.ViewParent c(android.view.View) -> c
+com.searchboxsdk.android.util.sliding.b.l$a -> com.searchboxsdk.android.util.sliding.b.aj:
+    void a(android.view.View,com.searchboxsdk.android.util.sliding.b.a) -> a
+    void a(android.view.View) -> a
+    long a() -> a
+    int b(android.view.View) -> b
+    android.view.ViewParent c(android.view.View) -> c
+com.searchboxsdk.android.util.sliding.b.l$b -> com.searchboxsdk.android.util.sliding.b.ak:
+com.searchboxsdk.android.util.sliding.b.l$c -> com.searchboxsdk.android.util.sliding.b.al:
+    long a() -> a
+com.searchboxsdk.android.util.sliding.b.l$d -> com.searchboxsdk.android.util.sliding.b.am:
+    void a(android.view.View,com.searchboxsdk.android.util.sliding.b.a) -> a
+com.searchboxsdk.android.util.sliding.b.l$e -> com.searchboxsdk.android.util.sliding.b.an:
+    void a(android.view.View) -> a
+    android.view.ViewParent c(android.view.View) -> c
+com.searchboxsdk.android.util.sliding.b.l$f -> com.searchboxsdk.android.util.sliding.b.ao:
+    int b(android.view.View) -> b
+com.searchboxsdk.android.util.sliding.b.l$g -> com.searchboxsdk.android.util.sliding.b.ap:
+    void a(android.view.View,com.searchboxsdk.android.util.sliding.b.a) -> a
+    void a(android.view.View) -> a
+    int b(android.view.View) -> b
+    android.view.ViewParent c(android.view.View) -> c
+com.searchboxsdk.android.util.sliding.b.m -> com.searchboxsdk.android.util.sliding.b.aq:
+    long a() -> a
+com.searchboxsdk.android.util.sliding.b.n -> com.searchboxsdk.android.util.sliding.b.ar:
+    void a(android.view.View,java.lang.Object) -> a
+com.searchboxsdk.android.util.sliding.b.o -> com.searchboxsdk.android.util.sliding.b.as:
+    void a(android.view.View) -> a
+    android.view.ViewParent b(android.view.View) -> b
+com.searchboxsdk.android.util.sliding.b.p -> com.searchboxsdk.android.util.sliding.b.at:
+    int a(android.view.View) -> a
+com.searchboxsdk.android.util.sliding.b.q -> com.searchboxsdk.android.util.sliding.b.au:
+    com.searchboxsdk.android.util.sliding.b.q$c a -> a
+    void a(android.view.ViewGroup,boolean) -> a
+com.searchboxsdk.android.util.sliding.b.q$a -> com.searchboxsdk.android.util.sliding.b.av:
+    void a(android.view.ViewGroup,boolean) -> a
+com.searchboxsdk.android.util.sliding.b.q$b -> com.searchboxsdk.android.util.sliding.b.aw:
+com.searchboxsdk.android.util.sliding.b.q$c -> com.searchboxsdk.android.util.sliding.b.ax:
+    void a(android.view.ViewGroup,boolean) -> a
+com.searchboxsdk.android.util.sliding.b.q$d -> com.searchboxsdk.android.util.sliding.b.ay:
+    void a(android.view.ViewGroup,boolean) -> a
+com.searchboxsdk.android.util.sliding.b.r -> com.searchboxsdk.android.util.sliding.b.az:
+    void a(android.view.ViewGroup,boolean) -> a
+com.searchboxsdk.android.util.sliding.c -> com.searchboxsdk.android.util.sliding.m:
+    int a -> a
+    int b -> b
+    int c -> c
+    float[] d -> d
+    float[] e -> e
+    float[] f -> f
+    float[] g -> g
+    int[] h -> h
+    int[] i -> i
+    int[] j -> j
+    int k -> k
+    android.view.VelocityTracker l -> l
+    float m -> m
+    float n -> n
+    int o -> o
+    int p -> p
+    com.searchboxsdk.android.util.sliding.a q -> q
+    com.searchboxsdk.android.util.sliding.c$a r -> r
+    android.view.View s -> s
+    boolean t -> t
+    android.view.ViewGroup u -> u
+    android.view.animation.Interpolator v -> v
+    java.lang.Runnable w -> w
+    com.searchboxsdk.android.util.sliding.c a(android.view.ViewGroup,com.searchboxsdk.android.util.sliding.c$a) -> a
+    com.searchboxsdk.android.util.sliding.c a(android.view.ViewGroup,float,com.searchboxsdk.android.util.sliding.c$a) -> a
+    void a(float) -> a
+    int a() -> a
+    void a(int) -> a
+    int b() -> b
+    void a(android.view.View,int) -> a
+    android.view.View c() -> c
+    int d() -> d
+    void e() -> e
+    boolean a(android.view.View,int,int) -> a
+    boolean a(int,int) -> a
+    boolean a(int,int,int,int) -> a
+    int a(android.view.View,int,int,int,int) -> a
+    int a(int,int,int) -> a
+    int b(int,int,int) -> b
+    float a(float,float,float) -> a
+    float b(float) -> b
+    boolean a(boolean) -> a
+    void a(float,float) -> a
+    void f() -> f
+    void f(int) -> f
+    void g(int) -> g
+    void a(float,float,int) -> a
+    void c(android.view.MotionEvent) -> c
+    boolean b(int) -> b
+    void c(int) -> c
+    boolean b(android.view.View,int) -> b
+    boolean a(android.view.MotionEvent) -> a
+    void b(android.view.MotionEvent) -> b
+    void b(float,float,int) -> b
+    boolean a(float,float,int,int) -> a
+    boolean a(android.view.View,float,float) -> a
+    boolean d(int) -> d
+    boolean b(int,int) -> b
+    boolean e(int) -> e
+    boolean c(int,int) -> c
+    void g() -> g
+    void b(int,int,int,int) -> b
+    boolean d(int,int) -> d
+    boolean b(android.view.View,int,int) -> b
+    android.view.View e(int,int) -> e
+    int f(int,int) -> f
+com.searchboxsdk.android.util.sliding.c$1 -> com.searchboxsdk.android.util.sliding.n:
+    float getInterpolation(float) -> getInterpolation
+com.searchboxsdk.android.util.sliding.c$2 -> com.searchboxsdk.android.util.sliding.o:
+    com.searchboxsdk.android.util.sliding.c a -> a
+    void run() -> run
+com.searchboxsdk.android.util.sliding.c$a -> com.searchboxsdk.android.util.sliding.p:
+    void a(int) -> a
+    void a(android.view.View,int,int,int,int) -> a
+    void b(android.view.View,int) -> b
+    void a(android.view.View,float,float) -> a
+    void a(int,int) -> a
+    boolean b(int) -> b
+    void b(int,int) -> b
+    int c(int) -> c
+    int a(android.view.View) -> a
+    int b(android.view.View) -> b
+    boolean a(android.view.View,int) -> a
+    int a(android.view.View,int,int) -> a
+    int b(android.view.View,int,int) -> b
+com.startapp.android.eula.EULAAcceptanceListener -> com.startapp.android.eula.a:
+    void eulaAccepted() -> a
+    void eulaDeclined() -> b
+com.startapp.android.eula.EULAActivity -> com.startapp.android.eula.EULAActivity:
+    android.os.Handler handler -> a
+    com.startapp.android.eula.EULAActivity$EulaJsInterface jsInterface -> b
+    boolean handleUI -> c
+    android.view.View webviewsLinearLayout -> d
+    android.webkit.WebView bodyWebView -> e
+    android.webkit.WebView footerWebView -> f
+    android.view.View progressView -> g
+    android.content.BroadcastReceiver receiver -> h
+    boolean receiverWasRegister -> i
+    int loadedWebView -> j
+    boolean activateBack -> k
+    java.lang.String mainDirPath -> l
+    java.lang.String chain -> m
+    java.lang.String step -> n
+    java.lang.String template -> o
+    long counter -> p
+    long globalCounter -> q
+    android.os.AsyncTask bgTask -> r
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean loadEulaParameters() -> a
+    void showOfflineFiles(boolean) -> a
+    void setupWebView(android.webkit.WebView) -> a
+    void onBackPressed() -> onBackPressed
+    void onDestroy() -> onDestroy
+    void loadWebViews(java.lang.String,java.lang.String) -> a
+    void disableRotation() -> b
+    boolean access$000(com.startapp.android.eula.EULAActivity) -> a
+    long access$102(com.startapp.android.eula.EULAActivity,long) -> a
+    android.content.BroadcastReceiver access$202(com.startapp.android.eula.EULAActivity,android.content.BroadcastReceiver) -> a
+    android.os.Handler access$300(com.startapp.android.eula.EULAActivity) -> b
+    boolean access$400(com.startapp.android.eula.EULAActivity) -> c
+    java.lang.String access$502(com.startapp.android.eula.EULAActivity,java.lang.String) -> a
+    java.lang.String access$602(com.startapp.android.eula.EULAActivity,java.lang.String) -> b
+    void access$700(com.startapp.android.eula.EULAActivity,java.lang.String,java.lang.String) -> a
+    void access$800(com.startapp.android.eula.EULAActivity,boolean) -> a
+    android.os.AsyncTask access$902(com.startapp.android.eula.EULAActivity,android.os.AsyncTask) -> a
+    android.content.BroadcastReceiver access$200(com.startapp.android.eula.EULAActivity) -> d
+    boolean access$1002(com.startapp.android.eula.EULAActivity,boolean) -> b
+    boolean access$402(com.startapp.android.eula.EULAActivity,boolean) -> c
+    int access$1208(com.startapp.android.eula.EULAActivity) -> e
+    int access$1200(com.startapp.android.eula.EULAActivity) -> f
+    android.view.View access$1300(com.startapp.android.eula.EULAActivity) -> g
+    android.view.View access$1400(com.startapp.android.eula.EULAActivity) -> h
+    boolean access$1502(com.startapp.android.eula.EULAActivity,boolean) -> d
+com.startapp.android.eula.EULAActivity$1 -> com.startapp.android.eula.b:
+com.startapp.android.eula.EULAActivity$EulaJsInterface -> com.startapp.android.eula.c:
+    com.startapp.android.eula.EULAActivity this$0 -> a
+com.startapp.android.eula.EULAActivity$a -> com.startapp.android.eula.d:
+    boolean b -> b
+    com.startapp.android.eula.EULAActivity a -> a
+    java.lang.Void a(java.lang.Void[]) -> a
+    void a(java.lang.Void) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.startapp.android.eula.EULAActivity$a$1 -> com.startapp.android.eula.e:
+    com.startapp.android.eula.EULAActivity$a a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.startapp.android.eula.EULAActivity$a$2 -> com.startapp.android.eula.f:
+    com.startapp.android.eula.EULAActivity$a a -> a
+    void run() -> run
+com.startapp.android.eula.EULAActivity$b -> com.startapp.android.eula.g:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    boolean c -> c
+    com.startapp.android.eula.EULAActivity d -> d
+    java.lang.Boolean a(java.lang.Void[]) -> a
+    void a(java.lang.Boolean) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.startapp.android.eula.EULAActivity$c -> com.startapp.android.eula.h:
+    com.startapp.android.eula.EULAActivity a -> a
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    void onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String) -> onReceivedError
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+com.startapp.android.eula.EULAActivity$c$1 -> com.startapp.android.eula.i:
+    com.startapp.android.eula.EULAActivity$c a -> a
+    void run() -> run
+com.startapp.android.eula.EULAManager -> com.startapp.android.eula.j:
+    android.content.Context context -> a
+    com.startapp.android.eula.model.SDKVersion version -> b
+    boolean acceptedEula(com.startapp.android.eula.EULAAcceptanceListener) -> a
+    boolean acceptedEula(com.startapp.android.eula.EULAAcceptanceListener,boolean) -> a
+    void registerEulaAcceptanceListener(com.startapp.android.eula.EULAAcceptanceListener) -> b
+    boolean isAccepted(android.content.Context) -> a
+    com.startapp.android.eula.EULAManager$a getEulaNextStatus() -> a
+    boolean classExists(java.lang.String) -> a
+com.startapp.android.eula.EULAManager$1 -> com.startapp.android.eula.k:
+    com.startapp.android.eula.EULAAcceptanceListener a -> a
+    com.startapp.android.eula.EULAManager b -> b
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.startapp.android.eula.EULAManager$a -> com.startapp.android.eula.l:
+    com.startapp.android.eula.EULAManager$a a -> a
+    com.startapp.android.eula.EULAManager$a b -> b
+    com.startapp.android.eula.EULAManager$a c -> c
+    com.startapp.android.eula.EULAManager$a[] d -> d
+    com.startapp.android.eula.EULAManager$a[] values() -> values
+    com.startapp.android.eula.EULAManager$a valueOf(java.lang.String) -> valueOf
+com.startapp.android.eula.a -> com.startapp.android.eula.m:
+    android.content.Context a -> a
+    boolean a(byte[],java.lang.String) -> a
+    void a(java.lang.String,java.lang.String) -> a
+    boolean a(com.startapp.android.eula.model.h) -> a
+com.startapp.android.eula.a.a -> com.startapp.android.eula.a.a:
+    com.startapp.android.eula.a.a a -> a
+    com.startapp.android.eula.a.a[] b -> b
+    com.startapp.android.eula.a.a[] values() -> values
+    com.startapp.android.eula.a.a valueOf(java.lang.String) -> valueOf
+    com.startapp.android.eula.model.l a(java.lang.String,java.lang.Class) -> a
+    java.lang.String a(com.startapp.android.eula.model.m) -> a
+com.startapp.android.eula.a.b -> com.startapp.android.eula.a.b:
+    com.startapp.android.eula.model.d a(android.content.Context,java.lang.String,com.startapp.android.eula.model.c,java.util.Map,java.lang.Class) -> a
+    java.lang.String a(android.content.Context,java.lang.String,com.startapp.android.eula.model.c,java.util.Map) -> a
+    java.util.Map a(android.content.Context,java.util.Map) -> a
+com.startapp.android.eula.b -> com.startapp.android.eula.n:
+    com.startapp.android.eula.a b -> b
+    android.content.Context c -> c
+    java.lang.Object a -> a
+    java.lang.Boolean a(com.startapp.android.eula.model.g[]) -> a
+    com.startapp.android.eula.model.j a() -> a
+    boolean a(com.startapp.android.eula.model.j) -> a
+    void a(com.startapp.android.eula.model.g) -> a
+    com.startapp.android.eula.model.i b() -> b
+    com.startapp.android.eula.model.j a(com.startapp.android.eula.model.i) -> a
+    void a(com.startapp.android.eula.model.h) -> a
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.startapp.android.eula.model.SDKVersion -> com.startapp.android.eula.b.a:
+    com.startapp.android.eula.model.SDKVersion SEARCH_SDK -> a
+    com.startapp.android.eula.model.SDKVersion INAPP_SDK -> b
+    com.startapp.android.eula.model.SDKVersion POSTCALL_SDK -> c
+    com.startapp.android.eula.model.SDKVersion SEARCH_AND_POSTCALL_SDKS -> d
+    java.lang.String value -> e
+    java.lang.String protocolVersion -> f
+    java.lang.String offlineEulaFile -> g
+    com.startapp.android.eula.model.SDKVersion[] $VALUES -> h
+    com.startapp.android.eula.model.SDKVersion[] values() -> values
+    com.startapp.android.eula.model.SDKVersion valueOf(java.lang.String) -> valueOf
+    java.lang.String getValue() -> a
+    java.lang.String getProtocolVersion() -> b
+    java.lang.String getOfflineEulaFile() -> c
+com.startapp.android.eula.model.a -> com.startapp.android.eula.b.b:
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.util.Locale f -> f
+    java.lang.String g -> g
+    com.startapp.android.eula.model.f h -> h
+    com.startapp.android.eula.model.e i -> i
+    java.lang.String j -> j
+    java.lang.String k -> k
+    java.lang.String l -> l
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    void c(java.lang.String) -> c
+    void d(java.lang.String) -> d
+    void a(java.util.Locale) -> a
+    void a(com.startapp.android.eula.model.f) -> a
+    void a(com.startapp.android.eula.model.e) -> a
+    void e(java.lang.String) -> e
+    void f(java.lang.String) -> f
+    void g(java.lang.String) -> g
+    java.lang.String a() -> a
+    void h(java.lang.String) -> h
+    java.lang.String toString() -> toString
+    org.json.JSONObject b() -> b
+com.startapp.android.eula.model.b -> com.startapp.android.eula.b.c:
+    java.lang.String a -> a
+com.startapp.android.eula.model.c -> com.startapp.android.eula.b.d:
+    com.startapp.android.eula.model.a b -> b
+    void a(com.startapp.android.eula.model.a) -> a
+    java.lang.String toString() -> toString
+com.startapp.android.eula.model.d -> com.startapp.android.eula.b.e:
+    boolean b -> b
+    java.lang.String toString() -> toString
+com.startapp.android.eula.model.e -> com.startapp.android.eula.b.f:
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    java.lang.String g -> g
+    int h -> h
+    java.lang.String i -> i
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    void c(java.lang.String) -> c
+    void d(java.lang.String) -> d
+    void e(java.lang.String) -> e
+    void f(java.lang.String) -> f
+    void a(int) -> a
+    void g(java.lang.String) -> g
+    java.lang.String toString() -> toString
+    org.json.JSONObject b() -> b
+com.startapp.android.eula.model.f -> com.startapp.android.eula.b.g:
+    float b -> b
+    int c -> c
+    int d -> d
+    float e -> e
+    int f -> f
+    float g -> g
+    float h -> h
+    java.lang.String toString() -> toString
+    org.json.JSONObject b() -> b
+com.startapp.android.eula.model.g -> com.startapp.android.eula.b.h:
+    java.lang.String b -> b
+    java.lang.String c -> c
+    boolean d -> d
+    java.lang.String e -> e
+    long f -> f
+    java.lang.String g -> g
+    long h -> h
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    void a(boolean) -> a
+    void a(long) -> a
+    void b(long) -> b
+    void c(java.lang.String) -> c
+    void d(java.lang.String) -> d
+    java.lang.String toString() -> toString
+    org.json.JSONObject b() -> b
+com.startapp.android.eula.model.h -> com.startapp.android.eula.b.i:
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    byte[] e -> e
+    byte[] f -> f
+    byte[] a() -> a
+    byte[] b() -> b
+    java.lang.String c() -> c
+    java.lang.String d() -> d
+    java.lang.String e() -> e
+    java.lang.String toString() -> toString
+    void a(org.json.JSONObject) -> a
+com.startapp.android.eula.model.i -> com.startapp.android.eula.b.j:
+    org.json.JSONObject b() -> b
+com.startapp.android.eula.model.j -> com.startapp.android.eula.b.k:
+    com.startapp.android.eula.model.h c -> c
+    com.startapp.android.eula.model.h a() -> a
+    java.lang.String toString() -> toString
+    void a(org.json.JSONObject) -> a
+com.startapp.android.eula.model.k -> com.startapp.android.eula.b.l:
+    com.startapp.android.eula.model.g c -> c
+    void a(com.startapp.android.eula.model.g) -> a
+    org.json.JSONObject b() -> b
+com.startapp.android.eula.model.l -> com.startapp.android.eula.b.m:
+    void a(org.json.JSONObject) -> a
+com.startapp.android.eula.model.m -> com.startapp.android.eula.b.n:
+    org.json.JSONObject b() -> b
+com.startapp.android.eula.util.Configuration -> com.startapp.android.eula.c.a:
+    android.content.SharedPreferences getSettings(android.content.Context) -> a
+    android.content.SharedPreferences getSettings(android.content.Context,java.lang.String) -> a
+    java.lang.Boolean getBoolean(android.content.Context,java.lang.String,java.lang.Boolean) -> a
+    void setBoolean(android.content.Context,java.lang.String,java.lang.Boolean) -> b
+    java.lang.String getString(android.content.Context,java.lang.String,java.lang.String) -> a
+    void setString(android.content.Context,java.lang.String,java.lang.String) -> b
+    java.lang.String getString(android.content.Context,java.lang.String,java.lang.String,java.lang.String) -> a
+    void setString(android.content.Context,java.lang.String,java.lang.String,java.lang.String) -> b
+com.startapp.android.eula.util.Util -> com.startapp.android.eula.c.b:
+    byte[] ENCRYPTION_KEY -> a
+    java.lang.String getStringFromManifest(android.content.Context,java.lang.String) -> a
+    java.lang.String getDeviceId(android.content.Context) -> a
+    java.lang.String getIMEI(android.content.Context) -> h
+    java.lang.String getMACAddress(android.content.Context) -> b
+    boolean copyResourceFromZipFile(java.lang.String,java.lang.String,java.lang.String,boolean) -> a
+    com.startapp.android.eula.model.a getApplicationDetails(android.content.Context) -> c
+    com.startapp.android.eula.model.e getBuild(android.content.Context) -> d
+    com.startapp.android.eula.model.f getDisplayMetrics(android.content.Context) -> e
+    java.lang.String getDevId(android.content.Context) -> f
+    java.lang.String getAppId(android.content.Context) -> g
+    void setIds(android.content.Context,java.lang.String,java.lang.String) -> a
+com.startapp.android.eula.util.a -> com.startapp.android.eula.c.c:
+    java.lang.String a(android.content.Context) -> a
+com.startapp.android.eula.util.b -> com.startapp.android.eula.c.d:
+    boolean a -> a
+    java.lang.String a(byte[],int) -> a
+    byte[] b(byte[],int) -> b
+    byte[] a(byte[],int,int,int) -> a
+com.startapp.android.eula.util.b$a -> com.startapp.android.eula.c.e:
+    byte[] a -> a
+    int b -> b
+com.startapp.android.eula.util.b$b -> com.startapp.android.eula.c.f:
+    byte[] h -> h
+    byte[] i -> i
+    byte[] j -> j
+    int c -> c
+    int k -> k
+    boolean d -> d
+    boolean e -> e
+    boolean f -> f
+    byte[] l -> l
+    boolean g -> g
+    boolean a(byte[],int,int,boolean) -> a
+com.startapp.android.eula.util.c -> com.startapp.android.eula.c.g:
+    android.graphics.RectF a -> a
+    void draw(android.graphics.Canvas,android.graphics.Paint) -> draw
+    void onResize(float,float) -> onResize
+    com.startapp.android.eula.util.c a() -> a
+    android.graphics.drawable.shapes.Shape clone() -> clone
+    java.lang.Object clone() -> clone
+com.startapp.android.eula.util.d -> com.startapp.android.eula.c.h:
+    byte[] a -> a
+    java.lang.String a(java.lang.String) -> a
+com.startapp.android.eula.util.e -> com.startapp.android.eula.c.i:
+    java.lang.String a(android.content.Context,java.lang.String,byte[],java.util.Map) -> a
+    java.net.HttpURLConnection b(android.content.Context,java.lang.String,byte[],java.util.Map) -> b
+com.startapp.android.eula.util.f -> com.startapp.android.eula.c.j:
+    boolean a -> a
+com.startapp.android.eula.util.g -> com.startapp.android.eula.c.k:
+    android.view.View a(android.content.Context,java.lang.String,android.webkit.WebView,android.webkit.WebView) -> a
+    android.view.View a(android.content.Context) -> a
+com.startapp.android.publish.Ad -> com.startapp.android.publish.a:
+    android.content.Context context -> a
+    java.lang.Object extraData -> b
+    java.lang.String errorMessage -> c
+    com.startapp.android.publish.Ad$AdState state -> d
+    void setState(com.startapp.android.publish.Ad$AdState) -> a
+    void setErrorMessage(java.lang.String) -> a
+    boolean load(com.startapp.android.publish.AdEventListener) -> a
+    boolean load(com.startapp.android.publish.model.AdPreferences,com.startapp.android.publish.AdEventListener) -> a
+    boolean isReady() -> a
+com.startapp.android.publish.Ad$1 -> com.startapp.android.publish.b:
+    com.startapp.android.publish.AdEventListener a -> a
+    com.startapp.android.publish.Ad b -> b
+    void run() -> run
+com.startapp.android.publish.Ad$AdState -> com.startapp.android.publish.c:
+    com.startapp.android.publish.Ad$AdState UN_INITIALIZED -> a
+    com.startapp.android.publish.Ad$AdState PROCESSING -> b
+    com.startapp.android.publish.Ad$AdState READY -> c
+    com.startapp.android.publish.Ad$AdState[] $VALUES -> d
+    com.startapp.android.publish.Ad$AdState[] values() -> values
+    com.startapp.android.publish.Ad$AdState valueOf(java.lang.String) -> valueOf
+com.startapp.android.publish.AdDisplayListener -> com.startapp.android.publish.d:
+    void adHidden(com.startapp.android.publish.Ad) -> a
+    void adDisplayed(com.startapp.android.publish.Ad) -> b
+com.startapp.android.publish.AdEventListener -> com.startapp.android.publish.e:
+    void onReceiveAd(com.startapp.android.publish.Ad) -> a
+    void onFailedToReceiveAd(com.startapp.android.publish.Ad) -> b
+com.startapp.android.publish.AppWallActivity -> com.startapp.android.publish.AppWallActivity:
+    android.webkit.WebView b -> b
+    android.app.ProgressDialog c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    boolean a -> a
+    boolean[] f -> f
+    boolean g -> g
+    com.startapp.android.publish.AppWallActivity$a h -> h
+    android.content.BroadcastReceiver i -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void b() -> b
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onRestart() -> onRestart
+    void onDestroy() -> onDestroy
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    void a() -> a
+    void finish() -> finish
+    com.startapp.android.publish.AppWallActivity$a a(com.startapp.android.publish.AppWallActivity) -> a
+    com.startapp.android.publish.AppWallActivity$a a(com.startapp.android.publish.AppWallActivity,com.startapp.android.publish.AppWallActivity$a) -> a
+    android.webkit.WebView b(com.startapp.android.publish.AppWallActivity) -> b
+    boolean[] c(com.startapp.android.publish.AppWallActivity) -> c
+    void a(com.startapp.android.publish.AppWallActivity,java.lang.String) -> a
+    void b(com.startapp.android.publish.AppWallActivity,java.lang.String) -> b
+com.startapp.android.publish.AppWallActivity$1 -> com.startapp.android.publish.f:
+    com.startapp.android.publish.AppWallActivity a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.startapp.android.publish.AppWallActivity$2 -> com.startapp.android.publish.g:
+    com.startapp.android.publish.AppWallActivity a -> a
+    void run() -> run
+com.startapp.android.publish.AppWallActivity$2$1 -> com.startapp.android.publish.h:
+    com.startapp.android.publish.AppWallActivity$2 a -> a
+    void run() -> run
+com.startapp.android.publish.AppWallActivity$3 -> com.startapp.android.publish.i:
+    com.startapp.android.publish.AppWallActivity a -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.startapp.android.publish.AppWallActivity$4 -> com.startapp.android.publish.j:
+    com.startapp.android.publish.AppWallActivity a -> a
+    void run() -> run
+com.startapp.android.publish.AppWallActivity$4$1 -> com.startapp.android.publish.k:
+    com.startapp.android.publish.AppWallActivity$4 a -> a
+    void run() -> run
+com.startapp.android.publish.AppWallActivity$5 -> com.startapp.android.publish.l:
+    com.startapp.android.publish.AppWallActivity a -> a
+    void run() -> run
+com.startapp.android.publish.AppWallActivity$6 -> com.startapp.android.publish.m:
+    com.startapp.android.publish.AppWallActivity a -> a
+    void run() -> run
+com.startapp.android.publish.AppWallActivity$a -> com.startapp.android.publish.n:
+    android.app.Activity a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    void a(android.app.Activity) -> a
+com.startapp.android.publish.AppWallActivity$b -> com.startapp.android.publish.o:
+    com.startapp.android.publish.AppWallActivity a -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+com.startapp.android.publish.HtmlAd -> com.startapp.android.publish.p:
+    boolean smartRedirect -> d
+    java.lang.String launcherName -> e
+    java.util.List apps -> f
+    java.lang.String html -> g
+    int width -> h
+    int height -> i
+    java.lang.String trackingUrl -> j
+    java.lang.String adId -> k
+    void setHtml(java.lang.String) -> b
+    java.lang.String getHtml() -> b
+    void setWidth(int) -> a
+    int getWidth() -> c
+    void setHeight(int) -> b
+    int getHeight() -> d
+    void setSize(int,int) -> a
+    boolean load(com.startapp.android.publish.model.AdPreferences,com.startapp.android.publish.AdEventListener) -> a
+    void loadAd(com.startapp.android.publish.model.AdPreferences,com.startapp.android.publish.AdEventListener) -> b
+    boolean show() -> e
+    boolean doHome() -> f
+    void initDefaultLauncherName() -> g
+com.startapp.android.publish.JsInterface -> com.startapp.android.publish.q:
+    boolean processed -> a
+    java.lang.Runnable callback -> b
+com.startapp.android.publish.StartAppAd -> com.startapp.android.publish.r:
+    com.startapp.android.publish.a.a offerWall2dAd -> d
+    com.startapp.android.publish.b offerWall3dAd -> e
+    com.startapp.android.publish.HtmlAd fullScreenAd -> f
+    com.startapp.android.publish.StartAppAd$AdMode adMode -> g
+    com.startapp.android.publish.AdDisplayListener callback -> h
+    android.content.BroadcastReceiver callbackBroadcastReceiver -> i
+    void init(android.content.Context,java.lang.String,java.lang.String) -> a
+    boolean load(com.startapp.android.publish.model.AdPreferences,com.startapp.android.publish.AdEventListener) -> a
+    void loadAds(com.startapp.android.publish.model.AdPreferences,com.startapp.android.publish.AdEventListener) -> b
+    boolean doHome() -> b
+    boolean show(com.startapp.android.publish.AdDisplayListener) -> a
+    void setAdMode(com.startapp.android.publish.StartAppAd$AdMode) -> a
+    void loadAd() -> c
+    void loadAd(com.startapp.android.publish.StartAppAd$AdMode,com.startapp.android.publish.model.AdPreferences,com.startapp.android.publish.AdEventListener) -> a
+    boolean showAd() -> d
+    boolean showAd(com.startapp.android.publish.AdDisplayListener) -> b
+    void onResume() -> e
+    void onPause() -> f
+    void onBackPressed() -> g
+    boolean isReady() -> a
+    com.startapp.android.publish.AdDisplayListener access$000(com.startapp.android.publish.StartAppAd) -> a
+    void access$100(com.startapp.android.publish.StartAppAd,com.startapp.android.publish.model.AdPreferences,com.startapp.android.publish.AdEventListener) -> a
+com.startapp.android.publish.StartAppAd$1 -> com.startapp.android.publish.s:
+    com.startapp.android.publish.StartAppAd a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.startapp.android.publish.StartAppAd$2 -> com.startapp.android.publish.t:
+    com.startapp.android.publish.model.AdPreferences a -> a
+    com.startapp.android.publish.AdEventListener b -> b
+    com.startapp.android.publish.StartAppAd c -> c
+    void onFinishLoadingMeta() -> a
+com.startapp.android.publish.StartAppAd$3 -> com.startapp.android.publish.u:
+    int[] a -> a
+com.startapp.android.publish.StartAppAd$AdMode -> com.startapp.android.publish.v:
+    com.startapp.android.publish.StartAppAd$AdMode AUTOMATIC -> a
+    com.startapp.android.publish.StartAppAd$AdMode FULLPAGE -> b
+    com.startapp.android.publish.StartAppAd$AdMode OFFERWALL -> c
+    com.startapp.android.publish.StartAppAd$AdMode[] $VALUES -> d
+    com.startapp.android.publish.StartAppAd$AdMode[] values() -> values
+    com.startapp.android.publish.StartAppAd$AdMode valueOf(java.lang.String) -> valueOf
+com.startapp.android.publish.StartAppAd$a -> com.startapp.android.publish.w:
+    boolean b -> b
+    com.startapp.android.publish.AdEventListener c -> c
+    boolean d -> d
+    com.startapp.android.publish.StartAppAd a -> a
+    void onReceiveAd(com.startapp.android.publish.Ad) -> a
+    void onFailedToReceiveAd(com.startapp.android.publish.Ad) -> b
+com.startapp.android.publish.a -> com.startapp.android.publish.x:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    boolean c -> c
+    boolean d -> d
+    int e -> e
+    java.lang.String a() -> a
+    void a(java.lang.String) -> a
+    java.lang.String b() -> b
+    boolean c() -> c
+    void a(boolean) -> a
+    boolean d() -> d
+    void b(boolean) -> b
+com.startapp.android.publish.a.a -> com.startapp.android.publish.a.a:
+    boolean[] a -> g
+    java.lang.String[] b -> h
+    void loadAd(com.startapp.android.publish.model.AdPreferences,com.startapp.android.publish.AdEventListener) -> b
+    boolean show() -> e
+    boolean doHome() -> f
+    void setHtml(java.lang.String) -> b
+    void a(java.lang.String) -> c
+    void b(java.lang.String) -> d
+    java.lang.String[] a() -> g
+com.startapp.android.publish.b -> com.startapp.android.publish.y:
+    java.util.List b -> e
+    java.lang.String c -> f
+    java.util.List a -> d
+    boolean load(com.startapp.android.publish.model.AdPreferences,com.startapp.android.publish.AdEventListener) -> a
+    void a(com.startapp.android.publish.model.AdPreferences,com.startapp.android.publish.AdEventListener) -> b
+    void a(java.util.List) -> a
+    java.util.List a() -> b
+    boolean b() -> c
+    boolean c() -> d
+    void d() -> e
+com.startapp.android.publish.b$1 -> com.startapp.android.publish.z:
+    com.startapp.android.publish.model.AdPreferences a -> a
+    com.startapp.android.publish.AdEventListener b -> b
+    com.startapp.android.publish.b c -> c
+    void onFinishLoadingMeta() -> a
+com.startapp.android.publish.b.a -> com.startapp.android.publish.b.a:
+    java.util.List a -> a
+    android.content.Context b -> b
+    java.util.List c -> c
+    java.lang.Boolean a(java.lang.Void[]) -> a
+    void a() -> a
+    void b() -> b
+    java.util.List a(java.util.List,java.lang.String,java.lang.String) -> a
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.startapp.android.publish.b.b -> com.startapp.android.publish.b.b:
+    java.util.Set g -> g
+    java.util.List h -> h
+    boolean i -> i
+    java.lang.String j -> j
+    java.lang.Object a() -> a
+    boolean a(java.lang.Object) -> a
+    com.startapp.android.publish.a b(java.lang.String) -> b
+    java.lang.Boolean a(com.startapp.android.publish.a) -> a
+    void a(java.lang.Boolean) -> a
+    boolean a(java.lang.String) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+com.startapp.android.publish.b.c -> com.startapp.android.publish.b.c:
+    int g -> g
+    java.util.Set h -> h
+    java.util.List i -> i
+    java.util.ArrayList j -> j
+    java.lang.Object a() -> a
+    boolean a(java.lang.Object) -> a
+    java.util.List a(java.util.List) -> a
+    void c() -> c
+    void a(java.lang.Boolean) -> a
+    void a(com.startapp.android.publish.Ad) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+com.startapp.android.publish.b.d -> com.startapp.android.publish.b.d:
+    android.content.Context a -> a
+    com.startapp.android.publish.Ad b -> b
+    com.startapp.android.publish.model.AdPreferences c -> c
+    com.startapp.android.publish.AdEventListener d -> d
+    com.startapp.android.publish.model.AdPreferences$Placement e -> e
+    java.lang.String f -> f
+    java.lang.Boolean a(java.lang.Void[]) -> a
+    void a(java.lang.Boolean) -> a
+    boolean a(android.content.Context,java.lang.String) -> a
+    com.startapp.android.publish.model.GetAdRequest b() -> b
+    java.lang.Object a() -> a
+    boolean a(java.lang.Object) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.startapp.android.publish.b.e -> com.startapp.android.publish.b.e:
+    com.startapp.android.publish.model.GetAdRequest b() -> b
+    void a(com.startapp.android.publish.Ad) -> a
+com.startapp.android.publish.b.f -> com.startapp.android.publish.b.f:
+    int g -> g
+    com.startapp.android.publish.model.GetAdRequest b() -> b
+    boolean a(java.lang.String) -> a
+    void a(java.lang.Boolean) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+com.startapp.android.publish.b.g -> com.startapp.android.publish.b.g:
+    android.os.Handler g -> g
+    java.lang.String h -> h
+    boolean a(java.lang.String) -> a
+    void a(java.lang.Boolean) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    android.os.Handler a(com.startapp.android.publish.b.g) -> a
+com.startapp.android.publish.b.g$1 -> com.startapp.android.publish.b.h:
+    com.startapp.android.publish.b.g a -> a
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    void onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String) -> onReceivedError
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+com.startapp.android.publish.b.g$1$1 -> com.startapp.android.publish.b.i:
+    android.webkit.WebView a -> a
+    com.startapp.android.publish.b.g$1 b -> b
+    void run() -> run
+com.startapp.android.publish.b.g$1$2 -> com.startapp.android.publish.b.j:
+    android.webkit.WebView a -> a
+    java.lang.String b -> b
+    com.startapp.android.publish.b.g$1 c -> c
+    void run() -> run
+com.startapp.android.publish.b.g$2 -> com.startapp.android.publish.b.k:
+    android.webkit.WebView a -> a
+    com.startapp.android.publish.b.g b -> b
+    void run() -> run
+com.startapp.android.publish.b.h -> com.startapp.android.publish.b.l:
+    android.content.Context a -> a
+    com.startapp.android.publish.model.AdPreferences b -> b
+    com.startapp.android.publish.b.k c -> c
+    com.startapp.android.publish.model.MetaDataResponse d -> d
+    java.lang.Boolean a(java.lang.Void[]) -> a
+    void a(java.lang.Boolean) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.startapp.android.publish.b.i -> com.startapp.android.publish.b.m:
+    boolean a(java.lang.String) -> a
+    com.startapp.android.publish.model.GetAdRequest b() -> b
+    void a(java.lang.Boolean) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+com.startapp.android.publish.b.j -> com.startapp.android.publish.b.n:
+    com.startapp.android.publish.model.GetAdRequest b() -> b
+    void a(com.startapp.android.publish.Ad) -> a
+com.startapp.android.publish.b.k -> com.startapp.android.publish.b.o:
+    void onFinishLoadingMeta() -> a
+com.startapp.android.publish.banner.Banner -> com.startapp.android.publish.banner.Banner:
+    com.startapp.android.publish.banner.banner3d.Banner3D banner3D -> a
+    com.startapp.android.publish.banner.bannerstandard.BannerStandard bannerHtml -> b
+    com.startapp.android.publish.banner.BannerOptions options -> c
+    boolean bFirstTime -> d
+    com.startapp.android.publish.banner.Banner$BType type -> e
+    boolean bVisible -> f
+    void init() -> b
+    void init_step2() -> c
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    void showBanner() -> a
+    void access$000(com.startapp.android.publish.banner.Banner) -> a
+    boolean access$100(com.startapp.android.publish.banner.Banner) -> b
+    com.startapp.android.publish.banner.BannerOptions access$200(com.startapp.android.publish.banner.Banner) -> c
+    com.startapp.android.publish.banner.Banner$BType access$302(com.startapp.android.publish.banner.Banner,com.startapp.android.publish.banner.Banner$BType) -> a
+    com.startapp.android.publish.banner.Banner$BType access$300(com.startapp.android.publish.banner.Banner) -> d
+    com.startapp.android.publish.banner.banner3d.Banner3D access$400(com.startapp.android.publish.banner.Banner) -> e
+    com.startapp.android.publish.banner.bannerstandard.BannerStandard access$500(com.startapp.android.publish.banner.Banner) -> f
+    boolean access$102(com.startapp.android.publish.banner.Banner,boolean) -> a
+    boolean access$600(com.startapp.android.publish.banner.Banner) -> g
+com.startapp.android.publish.banner.Banner$1 -> com.startapp.android.publish.banner.a:
+    com.startapp.android.publish.banner.Banner this$0 -> a
+    void onFinishLoadingMeta() -> a
+com.startapp.android.publish.banner.Banner$2 -> com.startapp.android.publish.banner.b:
+    com.startapp.android.publish.banner.Banner this$0 -> a
+    void run() -> run
+com.startapp.android.publish.banner.Banner$3 -> com.startapp.android.publish.banner.c:
+    int[] $SwitchMap$com$startapp$android$publish$banner$Banner$BType -> a
+com.startapp.android.publish.banner.Banner$BType -> com.startapp.android.publish.banner.d:
+    com.startapp.android.publish.banner.Banner$BType THREED -> a
+    com.startapp.android.publish.banner.Banner$BType REGULAR -> b
+    com.startapp.android.publish.banner.Banner$BType[] $VALUES -> c
+    com.startapp.android.publish.banner.Banner$BType[] values() -> values
+    com.startapp.android.publish.banner.Banner$BType valueOf(java.lang.String) -> valueOf
+com.startapp.android.publish.banner.Banner$SavedState -> com.startapp.android.publish.banner.Banner$SavedState:
+    boolean bFirstTime -> a
+    com.startapp.android.publish.banner.Banner$BType type -> b
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+com.startapp.android.publish.banner.Banner$SavedState$1 -> com.startapp.android.publish.banner.e:
+    com.startapp.android.publish.banner.Banner$SavedState createFromParcel(android.os.Parcel) -> a
+    com.startapp.android.publish.banner.Banner$SavedState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+com.startapp.android.publish.banner.BannerOptions -> com.startapp.android.publish.banner.BannerOptions:
+    int a -> a
+    int b -> b
+    int c -> c
+    int d -> d
+    int e -> e
+    int f -> f
+    int g -> g
+    int h -> h
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void a(int) -> a
+    void b(int) -> b
+    void c(int) -> c
+    void a(int,int) -> a
+    void d(int) -> d
+    void e(int) -> e
+    void f(int) -> f
+    int a() -> a
+    int b() -> b
+    int c() -> c
+    int d() -> d
+    int e() -> e
+    int f() -> f
+    int g() -> g
+    int h() -> h
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    void a(android.content.SharedPreferences$Editor) -> a
+    void fromJson(org.json.JSONObject) -> a
+    com.startapp.android.publish.banner.BannerOptions a(android.content.SharedPreferences) -> a
+    boolean equals(java.lang.Object) -> equals
+    java.lang.String toString() -> toString
+com.startapp.android.publish.banner.BannerOptions$1 -> com.startapp.android.publish.banner.f:
+    com.startapp.android.publish.banner.BannerOptions a(android.os.Parcel) -> a
+    com.startapp.android.publish.banner.BannerOptions[] a(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+com.startapp.android.publish.banner.a -> com.startapp.android.publish.banner.g:
+    android.graphics.Point a -> a
+    void a(int) -> a
+    void b(int) -> b
+    void a(int,int) -> a
+    int a() -> a
+    int b() -> b
+com.startapp.android.publish.banner.banner3d.Banner3D -> com.startapp.android.publish.banner.banner3d.Banner3D:
+    com.startapp.android.publish.banner.a BANNER_SIZE_XXSMALL -> a
+    com.startapp.android.publish.banner.a BANNER_SIZE_XSMALL -> b
+    com.startapp.android.publish.banner.a BANNER_SIZE_SMALL -> c
+    com.startapp.android.publish.banner.a BANNER_SIZE_MEDIUM -> d
+    com.startapp.android.publish.banner.a BANNER_SIZE_LARGE -> e
+    com.startapp.android.publish.banner.a BANNER_SIZE_XLARGE -> f
+    com.startapp.android.publish.banner.a[] bannerSizes -> g
+    com.startapp.android.publish.banner.BannerOptions options -> h
+    com.startapp.android.publish.banner.a[] bannerConvertedSizes -> i
+    com.startapp.android.publish.banner.banner3d.a ads -> j
+    java.util.List adsItems -> k
+    int nImagesLoaded -> l
+    android.graphics.Bitmap[] adsImages -> m
+    boolean[] bAdsImpression -> n
+    com.startapp.android.publish.banner.banner3d.b[] bannerView -> o
+    android.graphics.Bitmap[] banners -> p
+    android.graphics.Bitmap[] bannersLateLoad -> q
+    android.graphics.Camera mCamera -> r
+    android.graphics.Matrix mMatrix -> s
+    android.graphics.Paint mPaint -> t
+    float mRotation -> u
+    float mStartY -> v
+    int mCurrentBanner -> w
+    boolean bIsRotating -> x
+    int nTotalAds -> y
+    boolean bIsTouchDown -> z
+    boolean bIsLoaded -> A
+    boolean bIsLoading -> B
+    boolean bIsAnimation -> C
+    boolean bVisible -> D
+    boolean bDefaultLoad -> E
+    java.lang.Runnable mAutoRotation -> F
+    void hideBanner() -> a
+    void showBanner() -> b
+    void setBannerOptions(com.startapp.android.publish.banner.BannerOptions) -> setBannerOptions
+    void initArrays(int,boolean) -> a
+    void loadDefaultValues() -> d
+    void init() -> e
+    void load() -> c
+    void loadBanners(java.util.List) -> a
+    boolean optimizeSize() -> f
+    android.graphics.Point setApplicationSize() -> g
+    void onImageRequestCompleted(android.graphics.Bitmap,int) -> a
+    void postImagesLoad() -> h
+    void initSingleBannerView(int,boolean) -> b
+    android.graphics.Bitmap getCurrentBitmap() -> getCurrentBitmap
+    android.graphics.Bitmap getPreviousBitmap() -> getPreviousBitmap
+    void onDraw(android.graphics.Canvas) -> onDraw
+    android.graphics.Bitmap loadBitmapFromView(android.view.View) -> a
+    void drawFace(android.graphics.Canvas,android.graphics.Bitmap,int,int,int,int,float,float) -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void rotate(float) -> a
+    void onReceiveAd(com.startapp.android.publish.Ad) -> a
+    void onFailedToReceiveAd(com.startapp.android.publish.Ad) -> b
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    boolean[] access$000(com.startapp.android.publish.banner.banner3d.Banner3D) -> a
+    int access$100(com.startapp.android.publish.banner.banner3d.Banner3D) -> b
+    boolean access$200(com.startapp.android.publish.banner.banner3d.Banner3D) -> c
+    java.util.List access$300(com.startapp.android.publish.banner.banner3d.Banner3D) -> d
+    boolean access$400(com.startapp.android.publish.banner.banner3d.Banner3D) -> e
+    com.startapp.android.publish.banner.BannerOptions access$500(com.startapp.android.publish.banner.banner3d.Banner3D) -> f
+    void access$600(com.startapp.android.publish.banner.banner3d.Banner3D,float) -> a
+    float access$700(com.startapp.android.publish.banner.banner3d.Banner3D) -> g
+    boolean access$800(com.startapp.android.publish.banner.banner3d.Banner3D) -> h
+    boolean access$402(com.startapp.android.publish.banner.banner3d.Banner3D,boolean) -> a
+    void access$900(com.startapp.android.publish.banner.banner3d.Banner3D,java.util.List) -> a
+com.startapp.android.publish.banner.banner3d.Banner3D$1 -> com.startapp.android.publish.banner.banner3d.a:
+    com.startapp.android.publish.banner.banner3d.Banner3D this$0 -> a
+    void run() -> run
+com.startapp.android.publish.banner.banner3d.Banner3D$2 -> com.startapp.android.publish.banner.banner3d.b:
+    com.startapp.android.publish.banner.banner3d.Banner3D this$0 -> a
+    void run() -> run
+com.startapp.android.publish.banner.banner3d.Banner3D$3 -> com.startapp.android.publish.banner.banner3d.c:
+    com.startapp.android.publish.banner.banner3d.Banner3D this$0 -> a
+    void run() -> run
+com.startapp.android.publish.banner.banner3d.Banner3D$4 -> com.startapp.android.publish.banner.banner3d.d:
+    com.startapp.android.publish.banner.banner3d.Banner3D this$0 -> a
+    void run() -> run
+com.startapp.android.publish.banner.banner3d.Banner3D$SavedState -> com.startapp.android.publish.banner.banner3d.Banner3D$SavedState:
+    com.startapp.android.publish.model.AdDetails[] details -> f
+    android.graphics.Bitmap[] images -> g
+    float rotation -> h
+    int currentImage -> i
+    boolean[] bImpressions -> j
+    int nTotalAds -> a
+    boolean bIsLoaded -> b
+    boolean bIsLoading -> c
+    boolean bDefaultLoad -> d
+    boolean bIsVisible -> e
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void setImpressions(boolean[]) -> a
+    boolean[] getImpression() -> a
+    void setCurrentImage(int) -> a
+    int getCurrentImage() -> b
+    void setRotation(float) -> a
+    float getRotation() -> c
+    void setImages(android.graphics.Bitmap[]) -> a
+    android.graphics.Bitmap[] getImages() -> d
+    void setDetails(java.util.List) -> a
+    java.util.List getDetails() -> e
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    int describeContents() -> describeContents
+com.startapp.android.publish.banner.banner3d.Banner3D$SavedState$1 -> com.startapp.android.publish.banner.banner3d.e:
+    com.startapp.android.publish.banner.banner3d.Banner3D$SavedState createFromParcel(android.os.Parcel) -> a
+    com.startapp.android.publish.banner.banner3d.Banner3D$SavedState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+com.startapp.android.publish.banner.banner3d.a -> com.startapp.android.publish.banner.banner3d.f:
+    void a(com.startapp.android.publish.model.AdPreferences,com.startapp.android.publish.AdEventListener) -> b
+com.startapp.android.publish.banner.banner3d.b -> com.startapp.android.publish.banner.banner3d.g:
+    android.widget.TextView a -> a
+    android.widget.TextView b -> b
+    android.widget.ImageView c -> c
+    com.startapp.android.publish.d.i d -> d
+    android.widget.TextView e -> e
+    android.graphics.Point f -> f
+    void a() -> a
+    void setText(java.lang.String) -> setText
+    void setImage(android.graphics.Bitmap) -> setImage
+    void a(int,int,int) -> a
+    void setRating(float) -> setRating
+    void a(android.graphics.Bitmap,int,int) -> a
+    void setDescription(java.lang.String) -> setDescription
+    java.lang.String[] a(java.lang.String) -> a
+    com.startapp.android.publish.banner.banner3d.b$a getTemplateBySize() -> getTemplateBySize
+com.startapp.android.publish.banner.banner3d.b$1 -> com.startapp.android.publish.banner.banner3d.h:
+    com.startapp.android.publish.banner.banner3d.b a -> a
+    void onDraw(android.graphics.drawable.shapes.Shape,android.graphics.Canvas,android.graphics.Paint) -> onDraw
+com.startapp.android.publish.banner.banner3d.b$2 -> com.startapp.android.publish.banner.banner3d.i:
+    int[] a -> a
+com.startapp.android.publish.banner.banner3d.b$a -> com.startapp.android.publish.banner.banner3d.j:
+    com.startapp.android.publish.banner.banner3d.b$a a -> a
+    com.startapp.android.publish.banner.banner3d.b$a b -> b
+    com.startapp.android.publish.banner.banner3d.b$a c -> c
+    com.startapp.android.publish.banner.banner3d.b$a d -> d
+    com.startapp.android.publish.banner.banner3d.b$a e -> e
+    com.startapp.android.publish.banner.banner3d.b$a[] f -> f
+    com.startapp.android.publish.banner.banner3d.b$a[] values() -> values
+    com.startapp.android.publish.banner.banner3d.b$a valueOf(java.lang.String) -> valueOf
+com.startapp.android.publish.banner.bannerstandard.BannerStandard -> com.startapp.android.publish.banner.a.a:
+    android.webkit.WebView webView -> a
+    com.startapp.android.publish.banner.bannerstandard.a adHtml -> b
+    java.lang.String prevAdId -> c
+    boolean bIsLoaded -> d
+    boolean bDefaultLoad -> e
+    boolean bVisible -> f
+    boolean bSentImpression -> g
+    com.startapp.android.publish.banner.BannerOptions options -> h
+    com.startapp.android.publish.banner.a[] bannerSizes -> i
+    com.startapp.android.publish.banner.a[] bannerConvertedSizes -> j
+    com.startapp.android.publish.banner.a size -> k
+    java.util.Timer t -> l
+    com.startapp.android.publish.banner.bannerstandard.BannerStandard$Task task -> m
+    void hideBanner() -> a
+    void init() -> c
+    void reload() -> d
+    void load() -> b
+    void setApplicationSize() -> e
+    void onReceiveAd(com.startapp.android.publish.Ad) -> a
+    void loadHtml() -> f
+    void makeImpression() -> g
+    void setSize(int,int) -> a
+    void onFailedToReceiveAd(com.startapp.android.publish.Ad) -> b
+    void access$000(com.startapp.android.publish.banner.bannerstandard.BannerStandard) -> a
+    com.startapp.android.publish.banner.a access$200(com.startapp.android.publish.banner.bannerstandard.BannerStandard) -> b
+    android.webkit.WebView access$400(com.startapp.android.publish.banner.bannerstandard.BannerStandard) -> c
+    boolean access$500(com.startapp.android.publish.banner.bannerstandard.BannerStandard) -> d
+    boolean access$600(com.startapp.android.publish.banner.bannerstandard.BannerStandard) -> e
+    com.startapp.android.publish.banner.bannerstandard.a access$700(com.startapp.android.publish.banner.bannerstandard.BannerStandard) -> f
+com.startapp.android.publish.banner.bannerstandard.BannerStandard$1 -> com.startapp.android.publish.banner.a.b:
+    com.startapp.android.publish.banner.bannerstandard.BannerStandard this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.startapp.android.publish.banner.bannerstandard.BannerStandard$2 -> com.startapp.android.publish.banner.a.c:
+    com.startapp.android.publish.banner.bannerstandard.BannerStandard this$0 -> a
+    void run() -> run
+com.startapp.android.publish.banner.bannerstandard.BannerStandard$MyWebViewClient -> com.startapp.android.publish.banner.a.d:
+    com.startapp.android.publish.banner.bannerstandard.BannerStandard this$0 -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+com.startapp.android.publish.banner.bannerstandard.BannerStandard$Task -> com.startapp.android.publish.banner.a.e:
+    com.startapp.android.publish.banner.bannerstandard.BannerStandard this$0 -> a
+    void run() -> run
+com.startapp.android.publish.banner.bannerstandard.BannerStandard$Task$1 -> com.startapp.android.publish.banner.a.f:
+    com.startapp.android.publish.banner.bannerstandard.BannerStandard$Task this$1 -> a
+    void run() -> run
+com.startapp.android.publish.banner.bannerstandard.a -> com.startapp.android.publish.banner.a.g:
+    int a -> g
+    void loadAd(com.startapp.android.publish.model.AdPreferences,com.startapp.android.publish.AdEventListener) -> b
+com.startapp.android.publish.c -> com.startapp.android.publish.aa:
+    java.lang.String a -> a
+com.startapp.android.publish.c.a -> com.startapp.android.publish.c.a:
+    com.startapp.android.publish.c.a a -> a
+    com.startapp.android.publish.c.a[] b -> b
+    com.startapp.android.publish.c.a[] values() -> values
+    com.startapp.android.publish.c.a valueOf(java.lang.String) -> valueOf
+    com.startapp.android.publish.model.JsonDeserializer a(java.lang.String,java.lang.Class) -> a
+com.startapp.android.publish.c.b -> com.startapp.android.publish.c.b:
+    com.startapp.android.publish.model.BaseResponse a(android.content.Context,java.lang.String,com.startapp.android.publish.model.BaseRequest,java.util.Map,java.lang.Class) -> a
+    java.lang.String a(android.content.Context,java.lang.String,com.startapp.android.publish.model.BaseRequest,java.util.Map) -> a
+    boolean a(android.content.Context,java.lang.String,java.util.Map) -> a
+    void a(android.content.Context,java.lang.String,com.startapp.android.publish.model.BaseRequest,java.util.Map,java.lang.StringBuilder) -> a
+    java.util.Map a(android.content.Context,java.util.Map) -> a
+com.startapp.android.publish.d -> com.startapp.android.publish.ab:
+    com.startapp.android.publish.d$a d -> d
+    boolean a -> a
+    int b -> b
+    android.view.WindowManager c -> c
+    java.lang.String e -> e
+    java.lang.String[] f -> f
+    boolean[] g -> g
+    android.view.View h -> h
+    long i -> i
+    android.os.Handler j -> j
+    boolean k -> k
+    java.lang.String l -> l
+    android.view.WindowManager$LayoutParams getWmParams() -> getWmParams
+    void a() -> a
+    void a(int) -> a
+    void setOfferWall(java.lang.String) -> setOfferWall
+    void c() -> c
+    boolean dispatchKeyShortcutEvent(android.view.KeyEvent) -> dispatchKeyShortcutEvent
+    void b() -> b
+    void d() -> d
+    void setUrl(java.lang.String) -> setUrl
+    void setTrackingUrl(java.lang.String[]) -> setTrackingUrl
+    void setSmartRedirect(boolean[]) -> setSmartRedirect
+    android.os.Handler a(com.startapp.android.publish.d) -> a
+    long a(com.startapp.android.publish.d,long) -> a
+    void b(com.startapp.android.publish.d) -> b
+    android.view.View c(com.startapp.android.publish.d) -> c
+    boolean[] d(com.startapp.android.publish.d) -> d
+    long e(com.startapp.android.publish.d) -> e
+com.startapp.android.publish.d$1 -> com.startapp.android.publish.ac:
+    com.startapp.android.publish.d a -> a
+    void run() -> run
+com.startapp.android.publish.d$2 -> com.startapp.android.publish.ad:
+    com.startapp.android.publish.d a -> a
+    void run() -> run
+com.startapp.android.publish.d$2$1 -> com.startapp.android.publish.ae:
+    com.startapp.android.publish.d$2 a -> a
+    void run() -> run
+com.startapp.android.publish.d$3 -> com.startapp.android.publish.af:
+    com.startapp.android.publish.d a -> a
+    boolean onKey(android.view.View,int,android.view.KeyEvent) -> onKey
+com.startapp.android.publish.d$a -> com.startapp.android.publish.ag:
+    com.startapp.android.publish.d a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    void a(com.startapp.android.publish.d) -> a
+com.startapp.android.publish.d$b -> com.startapp.android.publish.ah:
+    com.startapp.android.publish.d a -> a
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    void onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String) -> onReceivedError
+com.startapp.android.publish.d$b$1 -> com.startapp.android.publish.ai:
+    com.startapp.android.publish.d$b a -> a
+    void run() -> run
+com.startapp.android.publish.d.a -> com.startapp.android.publish.d.a:
+    java.lang.String a(android.content.Context) -> a
+com.startapp.android.publish.d.b -> com.startapp.android.publish.d.b:
+    java.util.Map a -> a
+    boolean b -> b
+    android.graphics.Bitmap a(android.content.Context,java.lang.String,boolean) -> a
+    android.graphics.Bitmap a(android.content.Context,java.lang.String) -> a
+    void a(android.content.Context) -> a
+    boolean a(java.lang.String,java.lang.String,java.lang.String) -> a
+    void b(android.content.Context,java.lang.String) -> b
+com.startapp.android.publish.d.c -> com.startapp.android.publish.d.c:
+    java.lang.String a -> a
+    com.startapp.android.publish.d.c$a b -> b
+    int c -> c
+    android.graphics.Bitmap a(java.lang.Void[]) -> a
+    void a(android.graphics.Bitmap) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.startapp.android.publish.d.c$a -> com.startapp.android.publish.d.d:
+    void onImageRequestCompleted(android.graphics.Bitmap,int) -> a
+com.startapp.android.publish.d.d -> com.startapp.android.publish.d.e:
+    android.graphics.Bitmap a(java.lang.String) -> a
+com.startapp.android.publish.d.d$a -> com.startapp.android.publish.d.f:
+    long skip(long) -> skip
+com.startapp.android.publish.d.e -> com.startapp.android.publish.d.g:
+    android.content.SharedPreferences a -> a
+    android.content.SharedPreferences a(android.content.Context) -> a
+    java.lang.Boolean a(android.content.Context,java.lang.String,java.lang.Boolean) -> a
+    void b(android.content.Context,java.lang.String,java.lang.Boolean) -> b
+    java.lang.String a(android.content.Context,java.lang.String,java.lang.String) -> a
+    void b(android.content.Context,java.lang.String,java.lang.String) -> b
+com.startapp.android.publish.d.f -> com.startapp.android.publish.d.h:
+    android.graphics.RectF a -> a
+    void draw(android.graphics.Canvas,android.graphics.Paint) -> draw
+    void onResize(float,float) -> onResize
+    com.startapp.android.publish.d.f a() -> a
+    android.graphics.drawable.shapes.Shape clone() -> clone
+    java.lang.Object clone() -> clone
+com.startapp.android.publish.d.g -> com.startapp.android.publish.d.i:
+    void a(int,java.lang.String) -> a
+    void a(int,java.lang.String,java.lang.Throwable) -> a
+com.startapp.android.publish.d.h -> com.startapp.android.publish.d.j:
+    boolean a(android.content.Context,java.lang.String,java.util.Map,java.lang.StringBuilder) -> a
+    java.net.HttpURLConnection a(android.content.Context,java.lang.String,byte[],java.util.Map) -> a
+com.startapp.android.publish.d.i -> com.startapp.android.publish.d.k:
+    void setRating(float) -> setRating
+    void a(java.lang.String) -> a
+com.startapp.android.publish.d.j -> com.startapp.android.publish.d.l:
+    boolean a -> a
+    boolean a() -> a
+com.startapp.android.publish.d.k -> com.startapp.android.publish.d.m:
+    int a(android.content.Context,int) -> a
+    int b(android.content.Context,int) -> b
+    void a(android.widget.TextView,java.util.Set) -> a
+    android.view.View a(android.content.Context) -> a
+com.startapp.android.publish.d.l -> com.startapp.android.publish.d.n:
+    boolean a -> a
+    java.lang.String a() -> a
+    java.lang.String a(java.util.Set) -> a
+    java.util.Set a(java.lang.String) -> a
+    boolean a(android.content.Context) -> a
+    java.lang.String a(java.lang.String,java.lang.String,java.lang.String) -> a
+    void a(java.util.List,java.lang.String,java.lang.String,boolean) -> a
+    void a(java.util.List,java.lang.String,java.util.Set,boolean) -> a
+    java.lang.String a(android.content.Context,java.lang.String) -> a
+    void a(android.app.Activity,boolean) -> a
+    java.util.Set a(org.json.JSONArray,java.util.Set) -> a
+    void b(android.content.Context,java.lang.String) -> b
+    void a(android.content.Context,java.lang.String,int) -> a
+    void a(android.content.Context,java.lang.String,int,java.lang.Runnable) -> a
+    void a(android.content.Context,com.startapp.android.publish.model.AdPreferences) -> a
+    void a(android.content.Context,java.lang.String,java.lang.String) -> a
+com.startapp.android.publish.d.l$1 -> com.startapp.android.publish.d.o:
+    android.content.Context a -> a
+    java.lang.String b -> b
+    java.lang.Void a(java.lang.Void[]) -> a
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.startapp.android.publish.d.l$2 -> com.startapp.android.publish.d.p:
+    android.webkit.WebView a -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+com.startapp.android.publish.d.l$a -> com.startapp.android.publish.d.q:
+    java.lang.String a -> a
+    boolean b -> b
+    boolean c -> c
+    int d -> d
+    android.app.ProgressDialog e -> e
+    java.lang.Runnable f -> f
+    android.content.Context g -> g
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    void onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String) -> onReceivedError
+    void a() -> a
+    void b() -> b
+    int a(com.startapp.android.publish.d.l$a) -> a
+    boolean b(com.startapp.android.publish.d.l$a) -> b
+    java.lang.String c(com.startapp.android.publish.d.l$a) -> c
+    android.content.Context d(com.startapp.android.publish.d.l$a) -> d
+    void e(com.startapp.android.publish.d.l$a) -> e
+    java.lang.Runnable f(com.startapp.android.publish.d.l$a) -> f
+com.startapp.android.publish.d.l$a$1 -> com.startapp.android.publish.d.r:
+    com.startapp.android.publish.d.l$a a -> a
+    void run() -> run
+com.startapp.android.publish.list3d.Dynamics -> com.startapp.android.publish.list3d.Dynamics:
+    float a -> a
+    float b -> b
+    float c -> c
+    float d -> d
+    long e -> e
+    void a(float,float,long) -> a
+    float a() -> a
+    float b() -> b
+    boolean a(float,float) -> a
+    void a(float) -> a
+    void b(float) -> b
+    void a(long) -> a
+    float c() -> c
+    void a(int) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    void a(double) -> a
+    java.lang.String toString() -> toString
+com.startapp.android.publish.list3d.List3DActivity -> com.startapp.android.publish.list3d.List3DActivity:
+    com.startapp.android.publish.list3d.c a -> a
+    android.app.ProgressDialog b -> b
+    android.webkit.WebView c -> c
+    java.util.List d -> d
+    android.content.BroadcastReceiver e -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void onPause() -> onPause
+    void a(int) -> a
+    void finish() -> finish
+    java.util.List a(com.startapp.android.publish.list3d.List3DActivity) -> a
+    android.webkit.WebView a(com.startapp.android.publish.list3d.List3DActivity,android.webkit.WebView) -> a
+    android.webkit.WebView b(com.startapp.android.publish.list3d.List3DActivity) -> b
+    android.app.ProgressDialog a(com.startapp.android.publish.list3d.List3DActivity,android.app.ProgressDialog) -> a
+    android.app.ProgressDialog c(com.startapp.android.publish.list3d.List3DActivity) -> c
+com.startapp.android.publish.list3d.List3DActivity$1 -> com.startapp.android.publish.list3d.a:
+    com.startapp.android.publish.list3d.List3DActivity a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.startapp.android.publish.list3d.List3DActivity$2 -> com.startapp.android.publish.list3d.b:
+    com.startapp.android.publish.list3d.List3DActivity a -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.startapp.android.publish.list3d.List3DActivity$2$1 -> com.startapp.android.publish.list3d.c:
+    com.startapp.android.publish.list3d.List3DActivity$2 a -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+com.startapp.android.publish.list3d.List3DActivity$3 -> com.startapp.android.publish.list3d.d:
+    com.startapp.android.publish.list3d.List3DActivity a -> a
+    void onClick(android.view.View) -> onClick
+com.startapp.android.publish.list3d.List3DActivity$4 -> com.startapp.android.publish.list3d.e:
+    com.startapp.android.publish.list3d.List3DActivity a -> a
+    void run() -> run
+com.startapp.android.publish.list3d.List3DActivity$a -> com.startapp.android.publish.list3d.f:
+    java.lang.String b -> b
+    boolean c -> c
+    boolean d -> d
+    com.startapp.android.publish.list3d.List3DActivity a -> a
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    void onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String) -> onReceivedError
+    void a() -> a
+    boolean a(com.startapp.android.publish.list3d.List3DActivity$a) -> a
+    java.lang.String b(com.startapp.android.publish.list3d.List3DActivity$a) -> b
+com.startapp.android.publish.list3d.List3DActivity$a$1 -> com.startapp.android.publish.list3d.g:
+    com.startapp.android.publish.list3d.List3DActivity$a a -> a
+    void run() -> run
+com.startapp.android.publish.list3d.ListItem -> com.startapp.android.publish.list3d.ListItem:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    float g -> g
+    boolean h -> h
+    android.graphics.drawable.Drawable i -> i
+    java.lang.String j -> j
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    java.lang.String a() -> a
+    java.lang.String b() -> b
+    java.lang.String c() -> c
+    java.lang.String d() -> d
+    java.lang.String e() -> e
+    java.lang.String f() -> f
+    android.graphics.drawable.Drawable g() -> g
+    float h() -> h
+    boolean i() -> i
+    java.lang.String j() -> j
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+com.startapp.android.publish.list3d.ListItem$1 -> com.startapp.android.publish.list3d.h:
+    com.startapp.android.publish.list3d.ListItem a(android.os.Parcel) -> a
+    com.startapp.android.publish.list3d.ListItem[] a(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+com.startapp.android.publish.list3d.SimpleDynamics -> com.startapp.android.publish.list3d.SimpleDynamics:
+    float f -> f
+    float g -> g
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void a(int) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    void a(double) -> a
+    java.lang.String toString() -> toString
+com.startapp.android.publish.list3d.SimpleDynamics$1 -> com.startapp.android.publish.list3d.i:
+    com.startapp.android.publish.list3d.SimpleDynamics a(android.os.Parcel) -> a
+    com.startapp.android.publish.list3d.SimpleDynamics[] a(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+com.startapp.android.publish.list3d.a -> com.startapp.android.publish.list3d.j:
+    java.util.HashSet a -> a
+    java.util.Hashtable b -> b
+    java.util.Set c -> c
+    com.startapp.android.publish.list3d.f d -> d
+    int e -> e
+    java.util.Stack f -> f
+    void a(com.startapp.android.publish.list3d.f,boolean) -> a
+    void a() -> a
+    void a(android.content.Context,java.lang.String,java.lang.String) -> a
+    android.graphics.Bitmap a(int,java.lang.String,java.lang.String) -> a
+    void b() -> b
+com.startapp.android.publish.list3d.a$1 -> com.startapp.android.publish.list3d.k:
+    android.content.Context a -> a
+    java.lang.String b -> b
+    com.startapp.android.publish.list3d.a c -> c
+    java.lang.Void a(java.lang.Void[]) -> a
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.startapp.android.publish.list3d.a$a -> com.startapp.android.publish.list3d.l:
+    java.lang.String a -> a
+    int b -> b
+    com.startapp.android.publish.list3d.a c -> c
+    android.graphics.Bitmap a(java.lang.Object[]) -> a
+    void a(android.graphics.Bitmap) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.startapp.android.publish.list3d.a$b -> com.startapp.android.publish.list3d.m:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    com.startapp.android.publish.list3d.a c -> c
+com.startapp.android.publish.list3d.b -> com.startapp.android.publish.list3d.n:
+    java.lang.String a -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.startapp.android.publish.list3d.c -> com.startapp.android.publish.list3d.o:
+    java.lang.String b -> b
+    android.widget.Adapter c -> c
+    int d -> d
+    int e -> e
+    int f -> f
+    int g -> g
+    int h -> h
+    int i -> i
+    int j -> j
+    int k -> k
+    int l -> l
+    android.view.VelocityTracker m -> m
+    com.startapp.android.publish.list3d.Dynamics n -> n
+    java.lang.Runnable o -> o
+    java.util.LinkedList p -> p
+    java.lang.Runnable q -> q
+    android.graphics.Rect r -> r
+    android.graphics.Camera s -> s
+    android.graphics.Matrix t -> t
+    android.graphics.Paint u -> u
+    int v -> v
+    float w -> w
+    boolean x -> x
+    boolean y -> y
+    boolean z -> z
+    boolean A -> A
+    boolean B -> B
+    android.content.BroadcastReceiver a -> a
+    void setTag(java.lang.String) -> setTag
+    void a() -> a
+    void setHint(boolean) -> setHint
+    boolean b() -> b
+    boolean c() -> c
+    void setFade(boolean) -> setFade
+    void a(java.util.ArrayList) -> a
+    void setAdapter(android.widget.Adapter) -> setAdapter
+    android.widget.Adapter getAdapter() -> getAdapter
+    void setSelection(int) -> setSelection
+    android.view.View getSelectedView() -> getSelectedView
+    boolean d() -> d
+    void setDynamics(com.startapp.android.publish.list3d.Dynamics) -> setDynamics
+    void e() -> e
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    boolean drawChild(android.graphics.Canvas,android.view.View,long) -> drawChild
+    void a(android.graphics.Canvas,android.graphics.Bitmap,int,int,int,int,float,float) -> a
+    android.graphics.LightingColorFilter a(float) -> a
+    void a(android.view.MotionEvent) -> a
+    void b(float) -> b
+    void a(float,boolean) -> a
+    void a(int) -> a
+    void f() -> f
+    void g() -> g
+    boolean b(android.view.MotionEvent) -> b
+    int a(int,int) -> a
+    void b(int,int) -> b
+    void b(int) -> b
+    void c(int) -> c
+    void d(int) -> d
+    void c(int,int) -> c
+    void d(int,int) -> d
+    void a(android.view.View,int) -> a
+    void h() -> h
+    android.view.View getCachedView() -> getCachedView
+    int a(android.view.View) -> a
+    int b(android.view.View) -> b
+    int c(android.view.View) -> c
+    int d(android.view.View) -> d
+    int getFirstItemPosition() -> getFirstItemPosition
+    int getLastItemPosition() -> getLastItemPosition
+    boolean dispatchKeyShortcutEvent(android.view.KeyEvent) -> dispatchKeyShortcutEvent
+    java.lang.String a(com.startapp.android.publish.list3d.c) -> a
+    int a(com.startapp.android.publish.list3d.c,int) -> a
+    int b(com.startapp.android.publish.list3d.c) -> b
+    int b(com.startapp.android.publish.list3d.c,int) -> b
+    int c(com.startapp.android.publish.list3d.c) -> c
+    int c(com.startapp.android.publish.list3d.c,int) -> c
+    int d(com.startapp.android.publish.list3d.c) -> d
+    int d(com.startapp.android.publish.list3d.c,int) -> d
+    int e(com.startapp.android.publish.list3d.c) -> e
+    int e(com.startapp.android.publish.list3d.c,int) -> e
+    int f(com.startapp.android.publish.list3d.c) -> f
+    int g(com.startapp.android.publish.list3d.c) -> g
+    int f(com.startapp.android.publish.list3d.c,int) -> f
+    int h(com.startapp.android.publish.list3d.c) -> h
+    int i(com.startapp.android.publish.list3d.c) -> i
+    int g(com.startapp.android.publish.list3d.c,int) -> g
+    int j(com.startapp.android.publish.list3d.c) -> j
+    int h(com.startapp.android.publish.list3d.c,int) -> h
+    int k(com.startapp.android.publish.list3d.c) -> k
+    int i(com.startapp.android.publish.list3d.c,int) -> i
+    int l(com.startapp.android.publish.list3d.c) -> l
+    com.startapp.android.publish.list3d.Dynamics a(com.startapp.android.publish.list3d.c,com.startapp.android.publish.list3d.Dynamics) -> a
+    float a(com.startapp.android.publish.list3d.c,float) -> a
+    float m(com.startapp.android.publish.list3d.c) -> m
+    com.startapp.android.publish.list3d.Dynamics n(com.startapp.android.publish.list3d.c) -> n
+    boolean a(com.startapp.android.publish.list3d.c,boolean) -> a
+    boolean b(com.startapp.android.publish.list3d.c,boolean) -> b
+    void a(com.startapp.android.publish.list3d.c,float,boolean) -> a
+    int a(com.startapp.android.publish.list3d.c,android.view.View) -> a
+    void j(com.startapp.android.publish.list3d.c,int) -> j
+    int a(com.startapp.android.publish.list3d.c,int,int) -> a
+    void k(com.startapp.android.publish.list3d.c,int) -> k
+com.startapp.android.publish.list3d.c$1 -> com.startapp.android.publish.list3d.p:
+    com.startapp.android.publish.list3d.c a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.startapp.android.publish.list3d.c$2 -> com.startapp.android.publish.list3d.q:
+    com.startapp.android.publish.list3d.c a -> a
+    void run() -> run
+com.startapp.android.publish.list3d.c$3 -> com.startapp.android.publish.list3d.r:
+    com.startapp.android.publish.list3d.c a -> a
+    void run() -> run
+com.startapp.android.publish.list3d.c$4 -> com.startapp.android.publish.list3d.s:
+    com.startapp.android.publish.list3d.c a -> a
+    void run() -> run
+com.startapp.android.publish.list3d.d -> com.startapp.android.publish.list3d.t:
+    android.widget.RelativeLayout a -> a
+    android.widget.ImageView b -> b
+    android.widget.TextView c -> c
+    android.widget.TextView d -> d
+    android.widget.TextView e -> e
+    com.startapp.android.publish.d.i f -> f
+    com.startapp.android.publish.model.MetaDataStyle g -> g
+    android.widget.RelativeLayout a() -> a
+    android.widget.ImageView b() -> b
+    android.widget.TextView c() -> c
+    android.widget.TextView d() -> d
+    com.startapp.android.publish.d.i e() -> e
+    void a(com.startapp.android.publish.model.MetaDataStyle) -> a
+com.startapp.android.publish.list3d.d$1 -> com.startapp.android.publish.list3d.u:
+    com.startapp.android.publish.list3d.d a -> a
+    void onDraw(android.graphics.drawable.shapes.Shape,android.graphics.Canvas,android.graphics.Paint) -> onDraw
+com.startapp.android.publish.list3d.e -> com.startapp.android.publish.list3d.v:
+    com.startapp.android.publish.list3d.e a -> a
+    com.startapp.android.publish.list3d.a b -> b
+    java.util.List c -> c
+    com.startapp.android.publish.list3d.e[] d -> d
+    com.startapp.android.publish.list3d.e[] values() -> values
+    com.startapp.android.publish.list3d.e valueOf(java.lang.String) -> valueOf
+    void a() -> a
+    void a(com.startapp.android.publish.model.AdDetails) -> a
+    java.util.List b() -> b
+    android.graphics.Bitmap a(int,java.lang.String,java.lang.String) -> a
+    void a(android.content.Context,java.lang.String,java.lang.String) -> a
+    void a(com.startapp.android.publish.list3d.f,boolean) -> a
+com.startapp.android.publish.list3d.f -> com.startapp.android.publish.list3d.w:
+    void a(int) -> a
+com.startapp.android.publish.list3d.g -> com.startapp.android.publish.list3d.x:
+    java.lang.String d -> d
+    com.startapp.android.publish.list3d.g$a e -> e
+    boolean a -> a
+    com.startapp.android.publish.list3d.c f -> f
+    android.webkit.WebView g -> g
+    android.view.WindowManager b -> b
+    android.view.View h -> h
+    long i -> i
+    java.util.ArrayList c -> c
+    android.view.WindowManager$LayoutParams getWmParams() -> getWmParams
+    void a() -> a
+    void b(int) -> b
+    boolean onKeyUp(int,android.view.KeyEvent) -> onKeyUp
+    void d() -> d
+    void a(android.content.Context,android.widget.LinearLayout) -> a
+    void e() -> e
+    boolean dispatchKeyShortcutEvent(android.view.KeyEvent) -> dispatchKeyShortcutEvent
+    void f() -> f
+    int getStatusBarHeight() -> getStatusBarHeight
+    void b() -> b
+    void a(int) -> a
+    com.startapp.android.publish.list3d.c a(com.startapp.android.publish.list3d.g,com.startapp.android.publish.list3d.c) -> a
+    com.startapp.android.publish.list3d.g$a a(com.startapp.android.publish.list3d.g) -> a
+    android.view.View a(com.startapp.android.publish.list3d.g,android.view.View) -> a
+    android.view.View b(com.startapp.android.publish.list3d.g) -> b
+    long c(com.startapp.android.publish.list3d.g) -> c
+    android.webkit.WebView a(com.startapp.android.publish.list3d.g,android.webkit.WebView) -> a
+    android.webkit.WebView d(com.startapp.android.publish.list3d.g) -> d
+    java.lang.String c() -> c
+com.startapp.android.publish.list3d.g$1 -> com.startapp.android.publish.list3d.y:
+    com.startapp.android.publish.list3d.g a -> a
+    void run() -> run
+com.startapp.android.publish.list3d.g$2 -> com.startapp.android.publish.list3d.z:
+    com.startapp.android.publish.list3d.g a -> a
+    void run() -> run
+com.startapp.android.publish.list3d.g$3 -> com.startapp.android.publish.list3d.aa:
+    com.startapp.android.publish.list3d.g a -> a
+    void onClick(android.view.View) -> onClick
+com.startapp.android.publish.list3d.g$4 -> com.startapp.android.publish.list3d.ab:
+    com.startapp.android.publish.list3d.g a -> a
+    boolean onKey(android.view.View,int,android.view.KeyEvent) -> onKey
+com.startapp.android.publish.list3d.g$5 -> com.startapp.android.publish.list3d.ac:
+    java.util.List a -> a
+    com.startapp.android.publish.list3d.g b -> b
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.startapp.android.publish.list3d.g$a -> com.startapp.android.publish.list3d.ad:
+    com.startapp.android.publish.list3d.g a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.startapp.android.publish.list3d.g$b -> com.startapp.android.publish.list3d.ae:
+    com.startapp.android.publish.list3d.g a -> a
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    void onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String) -> onReceivedError
+com.startapp.android.publish.model.AdDetails -> com.startapp.android.publish.model.AdDetails:
+    java.lang.String adId -> a
+    java.lang.String clickUrl -> b
+    java.lang.String trackingUrl -> c
+    java.lang.String title -> d
+    java.lang.String description -> e
+    java.lang.String imageUrl -> f
+    float rating -> g
+    boolean smartRedirect -> h
+    java.lang.String template -> i
+    java.lang.String packageName -> j
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    java.lang.String getAdId() -> a
+    java.lang.String getClickUrl() -> b
+    java.lang.String getTrackingUrl() -> c
+    java.lang.String getTitle() -> d
+    java.lang.String getDescription() -> e
+    java.lang.String getImageUrl() -> f
+    float getRating() -> g
+    boolean isSmartRedirect() -> h
+    java.lang.String getTemplate() -> i
+    java.lang.String getPackageName() -> j
+    java.lang.String toString() -> toString
+    void fromJson(org.json.JSONObject) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+com.startapp.android.publish.model.AdDetails$1 -> com.startapp.android.publish.model.a:
+    com.startapp.android.publish.model.AdDetails createFromParcel(android.os.Parcel) -> a
+    com.startapp.android.publish.model.AdDetails[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+com.startapp.android.publish.model.AdPreferences -> com.startapp.android.publish.model.b:
+    java.lang.String publisherId -> a
+    java.lang.String productId -> b
+    boolean testMode -> c
+    java.lang.String gender -> d
+    int age -> e
+    java.lang.String keywords -> f
+    java.util.Set categories -> g
+    java.util.Set categoriesExclude -> h
+    java.lang.String getPublisherId() -> a
+    void setPublisherId(java.lang.String) -> a
+    java.lang.String getProductId() -> b
+    void setProductId(java.lang.String) -> b
+    boolean isTestMode() -> c
+    java.lang.String getGender() -> d
+    int getAge() -> e
+    java.lang.String getKeywords() -> f
+    java.util.Set getCategories() -> g
+    java.util.Set getCategoriesExclude() -> h
+    java.lang.String toString() -> toString
+com.startapp.android.publish.model.AdPreferences$Placement -> com.startapp.android.publish.model.c:
+    com.startapp.android.publish.model.AdPreferences$Placement INAPP_FULL_SCREEN -> a
+    com.startapp.android.publish.model.AdPreferences$Placement INAPP_BANNER -> b
+    com.startapp.android.publish.model.AdPreferences$Placement INAPP_OFFER_WALL -> c
+    com.startapp.android.publish.model.AdPreferences$Placement[] $VALUES -> d
+    com.startapp.android.publish.model.AdPreferences$Placement[] values() -> values
+    com.startapp.android.publish.model.AdPreferences$Placement valueOf(java.lang.String) -> valueOf
+com.startapp.android.publish.model.BaseDTO -> com.startapp.android.publish.model.d:
+com.startapp.android.publish.model.BaseRequest -> com.startapp.android.publish.model.e:
+    java.util.Map parameters -> a
+    java.lang.String publisherId -> b
+    java.lang.String productId -> c
+    java.lang.String sdkVersion -> d
+    java.lang.String userId -> e
+    java.lang.String packageId -> f
+    java.lang.String model -> g
+    java.lang.String manufacturer -> h
+    java.lang.String deviceVersion -> i
+    java.lang.String isp -> j
+    java.lang.String subPublisherId -> k
+    java.lang.String subProductId -> l
+    java.lang.String os -> m
+    int width -> n
+    int height -> o
+    int sdkId -> p
+    void setPublisherId(java.lang.String) -> a
+    void setPackageId(java.lang.String) -> b
+    void setProductId(java.lang.String) -> c
+    void setUserId(java.lang.String) -> d
+    void setIsp(java.lang.String) -> e
+    void setModel(java.lang.String) -> f
+    void setManufacturer(java.lang.String) -> g
+    void setDeviceVersion(java.lang.String) -> h
+    void setWidth(int) -> a
+    void setHeight(int) -> b
+    java.lang.String toString() -> toString
+    void fillApplicationDetails(android.content.Context,com.startapp.android.publish.model.AdPreferences) -> a
+    java.util.List getNameValueMap() -> a
+    java.lang.String getRequestString() -> b
+com.startapp.android.publish.model.BaseResponse -> com.startapp.android.publish.model.f:
+    java.util.Map parameters -> a
+    boolean validResponse -> b
+    java.lang.String errorMessage -> c
+    boolean isValidResponse() -> a
+    java.lang.String getErrorMessage() -> b
+    java.lang.String toString() -> toString
+    void fromJson(org.json.JSONObject) -> a
+com.startapp.android.publish.model.GetAdRequest -> com.startapp.android.publish.model.g:
+    com.startapp.android.publish.model.AdPreferences$Placement placement -> a
+    boolean testMode -> b
+    double longitude -> c
+    double latitude -> d
+    java.lang.String gender -> e
+    int age -> f
+    java.lang.String keywords -> g
+    java.lang.String template -> h
+    int adsNumber -> i
+    int offset -> j
+    java.util.Set categories -> k
+    java.util.Set categoriesExclude -> l
+    java.util.Set packagesExclude -> m
+    void setAdsNumber(int) -> c
+    void setPackagesExclude(java.util.Set) -> a
+    void setOffset(int) -> d
+    java.lang.String toString() -> toString
+    void fillAdPreferences(com.startapp.android.publish.model.AdPreferences,com.startapp.android.publish.model.AdPreferences$Placement) -> a
+    java.util.List getNameValueMap() -> a
+com.startapp.android.publish.model.GetAdResponse -> com.startapp.android.publish.model.h:
+    java.lang.String publisherId -> b
+    java.lang.String productId -> c
+    java.util.List adsDetails -> d
+    java.util.List getAdsDetails() -> c
+    java.lang.String toString() -> toString
+    void fromJson(org.json.JSONObject) -> a
+com.startapp.android.publish.model.JsonDeserializer -> com.startapp.android.publish.model.i:
+    void fromJson(org.json.JSONObject) -> a
+com.startapp.android.publish.model.MetaData -> com.startapp.android.publish.model.j:
+    com.startapp.android.publish.model.MetaData INSTANCE -> a
+    java.lang.Integer DEFAULT_TITLE_TEXT_SIZE -> b
+    java.lang.Integer DEFAULT_TITLE_TEXT_COLOR -> c
+    java.util.Set DEFAULT_TITLE_TEXT_DECORATION -> d
+    java.lang.Integer DEFAULT_TITLE_LINE_COLOR -> e
+    java.lang.Integer DEFAULT_ITEM_TITLE_TEXT_SIZE -> f
+    java.lang.Integer DEFAULT_ITEM_TITLE_TEXT_COLOR -> g
+    java.util.Set DEFAULT_ITEM_TITLE_TEXT_DECORATION -> h
+    java.lang.Integer DEFAULT_ITEM_DESC_TEXT_SIZE -> i
+    java.lang.Integer DEFAULT_ITEM_DESC_TEXT_COLOR -> j
+    java.util.Set DEFAULT_ITEM_DESC_TEXT_DECORATION -> k
+    java.lang.Integer DEFAULT_POWERED_BY_BG -> l
+    java.lang.Integer DEFAULT_POWERED_BY_TEXT_COLOR -> m
+    java.lang.Integer probability3D -> n
+    java.lang.Integer html3dProbability -> o
+    java.lang.Integer homeProbability3D -> p
+    java.lang.Integer backgroundGradientTop -> q
+    java.lang.Integer backgroundGradientBottom -> r
+    java.lang.Integer maxAds -> s
+    java.lang.Integer titleBackgroundColor -> t
+    java.lang.String titleContent -> u
+    java.lang.Integer titleTextSize -> v
+    java.lang.Integer titleTextColor -> w
+    java.util.Set titleTextDecoration -> x
+    java.lang.Integer titleLineColor -> y
+    com.startapp.android.publish.model.MetaDataStyle itemStyle -> z
+    com.startapp.android.publish.banner.BannerOptions banneroptions -> A
+    java.util.HashMap templates -> B
+    java.lang.Integer poweredByBackgroundColor -> C
+    java.lang.Integer poweredByTextColor -> D
+    boolean init -> E
+    com.startapp.android.publish.model.MetaData[] $VALUES -> F
+    com.startapp.android.publish.model.MetaData[] values() -> values
+    com.startapp.android.publish.model.MetaData valueOf(java.lang.String) -> valueOf
+    void init(android.content.Context,com.startapp.android.publish.model.MetaDataResponse) -> a
+    boolean isInit() -> a
+    int getHtml3DProbability(android.content.Context) -> a
+    int getProbability3D(android.content.Context) -> b
+    int getBackgroundGradientTop(android.content.Context) -> c
+    com.startapp.android.publish.model.MetaDataStyle getTemplate(android.content.Context,java.lang.String) -> a
+    com.startapp.android.publish.banner.BannerOptions getBannerOption(android.content.Context) -> d
+    int getBackgroundGradientBottom(android.content.Context) -> e
+    int getMaxAds(android.content.Context) -> f
+    java.lang.Integer getTitleBackgroundColor(android.content.Context) -> g
+    java.lang.String getTitleContent(android.content.Context) -> h
+    java.lang.Integer getTitleTextSize(android.content.Context) -> i
+    java.lang.Integer getTitleTextColor(android.content.Context) -> j
+    java.util.Set getTitleTextDecoration(android.content.Context) -> k
+    java.lang.Integer getTitleLineColor(android.content.Context) -> l
+    void initItemStyle(android.content.Context) -> w
+    int getItemGradientTop(android.content.Context) -> m
+    int getItemGradientBottom(android.content.Context) -> n
+    java.lang.Integer getItemTitleTextSize(android.content.Context) -> o
+    java.lang.Integer getItemTitleTextColor(android.content.Context) -> p
+    java.util.Set getItemTitleTextDecoration(android.content.Context) -> q
+    java.lang.Integer getItemDescriptionTextSize(android.content.Context) -> r
+    java.lang.Integer getItemDescriptionTextColor(android.content.Context) -> s
+    java.util.Set getItemDescriptionTextDecoration(android.content.Context) -> t
+    java.lang.Integer getPoweredByBackgroundColor(android.content.Context) -> u
+    java.lang.Integer getPoweredByTextColor(android.content.Context) -> v
+com.startapp.android.publish.model.MetaDataRequest -> com.startapp.android.publish.model.k:
+com.startapp.android.publish.model.MetaDataResponse -> com.startapp.android.publish.model.l:
+    java.lang.Integer probability3D -> b
+    java.lang.Integer homeProbability3D -> c
+    java.lang.Integer html3dProbability -> d
+    java.lang.Integer backgroundGradientTop -> e
+    java.lang.Integer backgroundGradientBottom -> f
+    java.lang.Integer maxAds -> g
+    java.lang.Integer titleBackgroundColor -> h
+    java.lang.String titleContent -> i
+    java.lang.Integer titleTextSize -> j
+    java.lang.Integer titleTextColor -> k
+    java.util.Set titleTextDecoration -> l
+    java.lang.Integer titleLineColor -> m
+    com.startapp.android.publish.model.MetaDataStyle itemStyle -> n
+    com.startapp.android.publish.banner.BannerOptions bannerOptions -> o
+    java.util.HashMap templates -> p
+    java.lang.Integer poweredByBackgroundColor -> q
+    java.lang.Integer poweredByTextColor -> r
+    java.util.HashMap getTemplates() -> c
+    com.startapp.android.publish.model.MetaDataStyle getItemStyle() -> d
+    java.lang.Integer getProbability3D() -> e
+    java.lang.Integer getHtml3DProbability() -> f
+    com.startapp.android.publish.banner.BannerOptions getBannerOption() -> g
+    java.lang.Integer getHomeProbability3D() -> h
+    java.lang.Integer getBackgroundGradientTop() -> i
+    java.lang.Integer getBackgroundGradientBottom() -> j
+    java.lang.Integer getMaxAds() -> k
+    java.lang.Integer getTitleBackgroundColor() -> l
+    java.lang.String getTitleContent() -> m
+    java.lang.Integer getTitleTextSize() -> n
+    java.lang.Integer getTitleTextColor() -> o
+    java.util.Set getTitleTextDecoration() -> p
+    java.lang.Integer getTitleLineColor() -> q
+    java.lang.Integer getPoweredByBackgroundColor() -> r
+    java.lang.Integer getPoweredByTextColor() -> s
+    void fromJson(org.json.JSONObject) -> a
+com.startapp.android.publish.model.MetaDataStyle -> com.startapp.android.publish.model.m:
+    java.lang.String name -> a
+    java.lang.Integer itemGradientTop -> b
+    java.lang.Integer itemGradientBottom -> c
+    java.lang.Integer itemTitleTextSize -> d
+    java.lang.Integer itemTitleTextColor -> e
+    java.util.Set itemTitleTextDecoration -> f
+    java.lang.Integer itemDescriptionTextSize -> g
+    java.lang.Integer itemDescriptionTextColor -> h
+    java.util.Set itemDescriptionTextDecoration -> i
+    java.lang.String getName() -> a
+    void setName(java.lang.String) -> a
+    java.lang.Integer getItemGradientTop() -> b
+    java.lang.Integer getItemGradientBottom() -> c
+    java.lang.Integer getItemTitleTextSize() -> d
+    java.lang.Integer getItemTitleTextColor() -> e
+    java.util.Set getItemTitleTextDecoration() -> f
+    java.lang.Integer getItemDescriptionTextSize() -> g
+    java.lang.Integer getItemDescriptionTextColor() -> h
+    java.util.Set getItemDescriptionTextDecoration() -> i
+    void setItemGradientTop(java.lang.Integer) -> a
+    void setItemGradientBottom(java.lang.Integer) -> b
+    void setItemTitleTextSize(java.lang.Integer) -> c
+    void setItemTitleTextColor(java.lang.Integer) -> d
+    void setItemTitleTextDecoration(java.util.Set) -> a
+    void setItemDescriptionTextSize(java.lang.Integer) -> e
+    void setItemDescriptionTextColor(java.lang.Integer) -> f
+    void setItemDescriptionTextDecoration(java.util.Set) -> b
+    void fromJson(org.json.JSONObject) -> a
+    void putSharedPrefs(android.content.SharedPreferences$Editor) -> a
+    com.startapp.android.publish.model.MetaDataStyle getSharedPrefs(java.lang.String,android.content.SharedPreferences) -> a
+com.startapp.android.publish.model.NameValueObject -> com.startapp.android.publish.model.n:
+    java.lang.String name -> a
+    java.lang.String value -> b
+    java.util.Set valueSet -> c
+    java.lang.String getName() -> a
+    void setName(java.lang.String) -> a
+    java.lang.String getValue() -> b
+    void setValue(java.lang.String) -> b
+    java.util.Set getValueSet() -> c
+    void setValueSet(java.util.Set) -> a
+    java.lang.String toString() -> toString
